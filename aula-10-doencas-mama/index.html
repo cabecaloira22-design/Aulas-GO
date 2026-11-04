@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Doenças benignas e malignas da mama — Saúde da Mulher II | Aula interativa</title>
+<style>
+:root{
+  --bg:#f6f7f5; --bg-soft:#eceee9; --surface:#ffffff; --surface-2:#f2f4f1;
+  --ink:#1b2420; --ink-2:#42504a; --ink-3:#6b7a73;
+  --line:#d7dcd6; --line-2:#c2cabf;
+  --accent:#8a2b52; --accent-2:#6b1f3f; --accent-soft:#f6e3ec;
+  --gold:#8a6a12; --gold-soft:#f6eed6;
+  --red:#9b2c2c; --red-soft:#fbe6e6;
+  --blue:#1e4e79; --blue-soft:#e2ecf6;
+  --purple:#5b3b78; --purple-soft:#ede4f5;
+  --green:#2f6b34; --green-soft:#e3f0e2;
+  --shadow:0 1px 2px rgba(20,35,30,.06),0 6px 18px rgba(20,35,30,.06);
+  --radius:12px; --radius-s:8px;
+  --fs:16px; --lh:1.62; --maxw:1120px;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:Georgia,"Times New Roman",serif;
+}
+html[data-theme="dark"]{
+  --bg:#141113; --bg-soft:#1b1619; --surface:#1f191d; --surface-2:#271f25;
+  --ink:#efe8ec; --ink-2:#c9bcc4; --ink-3:#9c8d96;
+  --line:#34292f; --line-2:#463a41;
+  --accent:#e58fb3; --accent-2:#f0b0ca; --accent-soft:#3a1c2a;
+  --gold:#d9b455; --gold-soft:#33290f;
+  --red:#e88b8b; --red-soft:#3a1d1d;
+  --blue:#82b4e0; --blue-soft:#15283a;
+  --purple:#c3a4de; --purple-soft:#2a1e38;
+  --green:#8cc98f; --green-soft:#1b2c1c;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:74px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:var(--fs);line-height:var(--lh);-webkit-text-size-adjust:100%}
+body.dense{--lh:1.45}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.25;color:var(--ink);margin:0 0 .5em}
+h1{font-size:1.95rem;letter-spacing:-.01em}
+h2{font-size:1.5rem;margin-top:0}
+h3{font-size:1.17rem}
+h4{font-size:1.02rem;font-family:var(--sans);font-weight:700;letter-spacing:.01em}
+p{margin:0 0 .85em}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#fff;padding:.6em 1em;z-index:999;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 18px}
+.topbar{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+.topbar-in{max-width:var(--maxw);margin:0 auto;padding:8px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.02rem;margin-right:auto;display:flex;align-items:center;gap:8px;min-width:0}
+.brand small{display:block;font-family:var(--sans);font-weight:400;font-size:.72rem;color:var(--ink-3);letter-spacing:.03em;text-transform:uppercase}
+.btn{background:var(--surface);color:var(--ink);border:1px solid var(--line-2);border-radius:var(--radius-s);padding:.42em .74em;font-size:.85rem;cursor:pointer;font-family:inherit;line-height:1.3;min-height:34px;transition:background .15s,border-color .15s}
+.btn:hover{background:var(--surface-2);border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.sm{font-size:.78rem;padding:.3em .6em;min-height:28px}
+.btn[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-2);font-weight:600}
+html[data-theme="dark"] .btn[aria-pressed="true"]{color:var(--accent)}
+.progress-mini{flex:1 1 120px;min-width:110px;max-width:230px;height:7px;background:var(--bg-soft);border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.progress-mini i{display:block;height:100%;background:var(--accent);width:0%;transition:width .35s}
+.navbar{border-bottom:1px solid var(--line);background:var(--surface);position:sticky;top:51px;z-index:55}
+.navscroll{max-width:var(--maxw);margin:0 auto;display:flex;gap:2px;overflow-x:auto;padding:6px 12px;scrollbar-width:thin}
+.navscroll button{white-space:nowrap;background:transparent;border:0;border-bottom:2px solid transparent;color:var(--ink-2);padding:.4em .62em;font-size:.82rem;cursor:pointer;font-family:inherit;border-radius:6px 6px 0 0}
+.navscroll button:hover{color:var(--ink);background:var(--surface-2)}
+.navscroll button[aria-current="true"]{color:var(--accent);border-bottom-color:var(--accent);font-weight:650}
+main{padding:22px 0 60px}
+section.mod{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin:0 0 20px;box-shadow:var(--shadow);scroll-margin-top:110px}
+.mod-head{display:flex;gap:12px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:16px;flex-wrap:wrap}
+.mod-num{font-family:var(--mono);font-size:.74rem;background:var(--accent-soft);color:var(--accent-2);border:1px solid var(--accent);border-radius:6px;padding:.2em .5em;font-weight:700;flex:0 0 auto}
+html[data-theme="dark"] .mod-num{color:var(--accent)}
+.mod-head h2{flex:1 1 240px;margin:0}
+.mod-sub{flex-basis:100%;color:var(--ink-3);font-size:.87rem;margin:0}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(265px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(165px,1fr))}
+.card{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-s);padding:14px}
+.card h4{margin-top:0}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.16em .5em;border-radius:5px;border:1px solid;vertical-align:middle;white-space:nowrap;line-height:1.5}
+.t-aula{background:var(--blue-soft);color:var(--blue);border-color:var(--blue)}
+.t-dir{background:var(--accent-soft);color:var(--accent-2);border-color:var(--accent)}
+html[data-theme="dark"] .t-dir{color:var(--accent)}
+.t-evi{background:var(--purple-soft);color:var(--purple);border-color:var(--purple)}
+.t-prova{background:var(--gold-soft);color:var(--gold);border-color:var(--gold)}
+.t-inf{background:var(--surface);color:var(--ink-3);border-color:var(--line-2)}
+.t-contro{background:var(--red-soft);color:var(--red);border-color:var(--red)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:.8rem;color:var(--ink-3)}
+.callout{border-left:4px solid var(--accent);background:var(--accent-soft);padding:12px 14px;border-radius:0 var(--radius-s) var(--radius-s) 0;margin:14px 0}
+.callout h4{margin:0 0 .35em;color:var(--accent-2)}
+html[data-theme="dark"] .callout h4{color:var(--accent)}
+.callout.warn{border-color:var(--red);background:var(--red-soft)}
+.callout.warn h4{color:var(--red)}
+.callout.gold{border-color:var(--gold);background:var(--gold-soft)}
+.callout.gold h4{color:var(--gold)}
+.callout.blue{border-color:var(--blue);background:var(--blue-soft)}
+.callout.blue h4{color:var(--blue)}
+.callout.neutral{border-color:var(--line-2);background:var(--surface-2)}
+.callout.neutral h4{color:var(--ink-2)}
+.callout p:last-child,.card p:last-child,li p:last-child{margin-bottom:0}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius-s);margin:12px 0;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:520px}
+caption{text-align:left;padding:10px 12px;font-size:.83rem;color:var(--ink-3);border-bottom:1px solid var(--line);background:var(--surface-2)}
+th,td{padding:.55em .7em;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+thead th{background:var(--surface-2);font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--bg-soft)}
+.nowrap{white-space:nowrap}
+details.acc{border:1px solid var(--line);border-radius:var(--radius-s);margin:10px 0;background:var(--surface);overflow:hidden}
+details.acc>summary{cursor:pointer;padding:.7em .9em;font-weight:650;background:var(--surface-2);list-style:none;display:flex;gap:8px;align-items:center;font-size:.94rem}
+details.acc>summary::-webkit-details-marker{display:none}
+details.acc>summary::before{content:"▸";color:var(--accent);font-size:.9em;transition:transform .18s;flex:0 0 auto}
+details.acc[open]>summary::before{transform:rotate(90deg)}
+details.acc>div.acc-body{padding:14px}
+ul.clean{list-style:none;padding-left:0;margin:.4em 0}
+ul.clean li{padding-left:1.15em;position:relative;margin-bottom:.4em}
+ul.clean li::before{content:"—";position:absolute;left:0;color:var(--accent)}
+ol.steps{padding-left:1.2em}
+ol.steps li{margin-bottom:.55em}
+.objitem{display:flex;gap:10px;align-items:flex-start;padding:.6em .7em;border:1px solid var(--line);border-radius:var(--radius-s);background:var(--surface-2);margin-bottom:8px}
+.objitem input{margin-top:.28em;width:17px;height:17px;accent-color:var(--accent);flex:0 0 auto;cursor:pointer}
+.objitem label{cursor:pointer;flex:1}
+.objitem .obj-meta{display:block;font-size:.78rem;color:var(--ink-3);margin-top:.2em}
+.qcard{border:1px solid var(--line);border-radius:var(--radius-s);background:var(--surface);padding:14px;margin-bottom:14px}
+.qmeta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.72rem;color:var(--ink-3);margin-bottom:8px}
+.pill{border:1px solid var(--line-2);border-radius:99px;padding:.1em .55em;font-size:.7rem;background:var(--surface-2);white-space:nowrap}
+.pill.d1{border-color:var(--green);color:var(--green)}
+.pill.d2{border-color:var(--gold);color:var(--gold)}
+.pill.d3{border-color:var(--red);color:var(--red)}
+.qstem{margin-bottom:10px}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:var(--radius-s);padding:.6em .7em;margin-bottom:7px;cursor:pointer;background:var(--surface-2);transition:border-color .15s,background .15s}
+.opt:hover{border-color:var(--accent)}
+.opt input{margin-top:.25em;accent-color:var(--accent);width:16px;height:16px;flex:0 0 auto}
+.opt .lt{font-weight:700;color:var(--accent);flex:0 0 auto;font-family:var(--mono);font-size:.85rem}
+.opt.correct{border-color:var(--green);background:var(--green-soft)}
+.opt.wrong{border-color:var(--red);background:var(--red-soft)}
+.opt.disabled{cursor:default;opacity:.92}
+.conf{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:.8rem;color:var(--ink-3);margin:8px 0}
+.fb{border-left:4px solid var(--accent);background:var(--surface-2);padding:12px;border-radius:0 var(--radius-s) var(--radius-s) 0;margin-top:10px;font-size:.9rem}
+.fb.ok{border-color:var(--green)}
+.fb.no{border-color:var(--red)}
+.fb h5{margin:.6em 0 .25em;font-size:.85rem;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-3);font-family:var(--sans)}
+.fb ul{margin:.3em 0;padding-left:1.1em}
+.fb li{margin-bottom:.3em}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:14px}
+.toolbar label{font-size:.8rem;color:var(--ink-2);display:flex;gap:5px;align-items:center}
+select,input[type="text"],input[type="number"],textarea{background:var(--surface);color:var(--ink);border:1px solid var(--line-2);border-radius:6px;padding:.34em .5em;font-family:inherit;font-size:.84rem}
+.fcstage{perspective:1400px;margin:14px 0}
+.fcard{background:var(--surface);border:1px solid var(--line-2);border-radius:var(--radius);padding:22px 18px;min-height:200px;display:flex;flex-direction:column;justify-content:center;text-align:center;cursor:pointer;box-shadow:var(--shadow);position:relative}
+.fcard .side-label{position:absolute;top:9px;left:12px;font-size:.68rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3)}
+.fcard .fc-topic{position:absolute;top:9px;right:12px;font-size:.68rem;color:var(--ink-3)}
+.fc-text{font-size:1.06rem;line-height:1.5}
+.fc-text.answer{font-size:.99rem;text-align:left}
+.srsrow{display:flex;gap:7px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+.srsrow .btn{flex:1 1 82px}
+.b-again{border-color:var(--red);color:var(--red)}
+.b-hard{border-color:var(--gold);color:var(--gold)}
+.b-good{border-color:var(--blue);color:var(--blue)}
+.b-easy{border-color:var(--green);color:var(--green)}
+.mm{font-size:.9rem}
+.mm ul{list-style:none;margin:0;padding-left:16px;border-left:1px dashed var(--line-2)}
+.mm>ul{padding-left:0;border-left:0}
+.mm li{margin:3px 0}
+.mmnode{display:flex;gap:7px;align-items:flex-start;padding:.34em .5em;border-radius:6px;border:1px solid transparent}
+.mmnode:hover{background:var(--surface-2);border-color:var(--line)}
+.mmnode.hit{background:var(--gold-soft);border-color:var(--gold)}
+.mmtoggle{background:var(--surface-2);border:1px solid var(--line-2);border-radius:5px;width:20px;height:20px;line-height:1;cursor:pointer;color:var(--accent);font-size:.8rem;flex:0 0 auto;font-family:var(--mono);padding:0}
+.mmlabel{cursor:default;flex:1}
+.mmlabel b{font-weight:650}
+.mmlabel .mmdet{display:block;font-size:.8rem;color:var(--ink-3)}
+.mm-l0>.mmnode{background:var(--accent-soft);border-color:var(--accent);font-weight:700}
+figure{margin:16px 0;border:1px solid var(--line);border-radius:var(--radius-s);padding:12px;background:var(--surface)}
+figure svg{width:100%;height:auto;display:block;max-width:100%}
+figcaption{font-size:.82rem;color:var(--ink-3);margin-top:9px;border-top:1px solid var(--line);padding-top:8px}
+.svg-lbl{font:11px var(--sans);fill:var(--ink-2)}
+.svg-lbl-s{font:9.5px var(--sans);fill:var(--ink-3)}
+.flow{display:flex;flex-direction:column;gap:8px;margin:12px 0}
+.fbox{border:1px solid var(--line-2);border-radius:var(--radius-s);padding:.65em .8em;background:var(--surface-2);font-size:.9rem}
+.fbox.start{background:var(--accent-soft);border-color:var(--accent);font-weight:650}
+.fbox.dec{background:var(--blue-soft);border-color:var(--blue)}
+.fbox.end{background:var(--green-soft);border-color:var(--green)}
+.fbox.alert{background:var(--red-soft);border-color:var(--red)}
+.farrow{text-align:center;color:var(--ink-3);font-size:1rem;line-height:1}
+.fsplit{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:10px}
+.kpi{display:flex;flex-direction:column;gap:2px;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-s);padding:11px 13px}
+.kpi b{font-size:1.5rem;font-family:var(--serif);line-height:1.1;color:var(--accent-2)}
+html[data-theme="dark"] .kpi b{color:var(--accent)}
+.kpi span{font-size:.76rem;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em}
+.bar{height:9px;background:var(--bg-soft);border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-top:5px}
+.bar i{display:block;height:100%;background:var(--accent)}
+.bar i.low{background:var(--red)}
+.bar i.mid{background:var(--gold)}
+.bar i.high{background:var(--green)}
+.muted{color:var(--ink-3);font-size:.85rem}
+.small{font-size:.83rem}
+mark{background:var(--gold-soft);color:inherit;padding:0 .15em;border-radius:3px}
+footer.pagefoot{border-top:1px solid var(--line);padding:20px 0 40px;color:var(--ink-3);font-size:.83rem}
+.noscript{background:var(--red-soft);border:1px solid var(--red);color:var(--red);padding:14px;border-radius:var(--radius-s);margin:14px 0}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:22px;background:var(--accent-2);color:#fff;padding:.7em 1.1em;border-radius:99px;font-size:.86rem;z-index:200;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .25s}
+.toast.show{opacity:1}
+html[data-theme="dark"] .toast{background:var(--accent);color:#2a0f1c}
+@media print{
+  .topbar,.navbar,.toolbar,.srsrow,.no-print,.btn{display:none!important}
+  body{background:#fff;color:#000;font-size:11pt}
+  section.mod{break-inside:auto;box-shadow:none;border:1px solid #999;page-break-after:always}
+  details.acc{border:1px solid #999}
+  details.acc>div.acc-body{display:block!important}
+  .tblwrap{overflow:visible}
+  table{min-width:0}
+  a{color:#000;text-decoration:underline}
+}
+@media (max-width:640px){
+  :root{--fs:15.5px}
+  section.mod{padding:16px 14px}
+  h1{font-size:1.55rem}
+  h2{font-size:1.28rem}
+  .topbar-in{padding:7px 12px}
+  .brand{font-size:.94rem}
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo principal</a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand">Mama: doenças benignas e malignas<small>Saúde da Mulher II · FCMMG · 8º período</small></div>
+    <div class="progress-mini" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progresso global da aula"><i id="globalBar"></i></div>
+    <span class="small nowrap" id="globalPct" aria-hidden="true">0%</span>
+    <button class="btn sm" id="btnResume" title="Ir para a última seção visitada">↩ Continuar</button>
+    <button class="btn sm" id="btnTheme" aria-label="Alternar tema claro e escuro">◐ Tema</button>
+    <button class="btn sm" id="btnFontDown" aria-label="Diminuir tamanho da fonte">A−</button>
+    <button class="btn sm" id="btnFontUp" aria-label="Aumentar tamanho da fonte">A+</button>
+    <button class="btn sm" id="btnDense" aria-pressed="false" aria-label="Alternar espaçamento compacto">⇕</button>
+    <button class="btn sm" id="btnPrint">⎙ PDF</button>
+  </div>
+</header>
+<nav class="navbar" aria-label="Navegação por módulos"><div class="navscroll" id="navscroll"></div></nav>
+<main id="conteudo" class="wrap">
+<noscript><div class="noscript"><strong>JavaScript está desativado.</strong> O conteúdo teórico, as tabelas e os algoritmos continuam legíveis, mas os recursos interativos (correção automática, flashcards, painel, busca e exportação) não funcionarão.</div></noscript>
+
+<section class="mod" id="m1" aria-labelledby="m1h">
+  <div class="mod-head">
+    <span class="mod-num">M1</span>
+    <h2 id="m1h">Capa e painel da aula</h2>
+    <p class="mod-sub">Doenças benignas e malignas da mama: do sintoma e da imagem ao diagnóstico, ao tratamento e ao rastreamento.</p>
+  </div>
+  <div class="grid g2">
+    <div>
+      <h3 style="margin-top:0">Competência central</h3>
+      <p>Ao final desta aula você deve ser capaz de <strong>conduzir a avaliação de uma queixa mamária</strong> (nódulo, dor, derrame papilar, alteração da pele/mamilo, achado de imagem): fazer anamnese e exame clínico dirigidos, escolher e interpretar mamografia/ultrassonografia/BI-RADS, indicar a biópsia certa, reconhecer as doenças benignas mais frequentes, diagnosticar e classificar o câncer de mama (subtipos e estadiamento), descrever o tratamento por estádio e subtipo, aplicar as recomendações de rastreamento e comunicar riscos e más notícias com respeito.</p>
+      <div class="legend" style="margin-top:12px">
+        <span class="tag t-aula">Material da disciplina</span>
+        <span class="tag t-dir">Diretriz atual</span>
+        <span class="tag t-evi">Evidência científica</span>
+        <span class="tag t-prova">Padrão de prova</span>
+        <span class="tag t-inf">Inferência didática</span>
+        <span class="tag t-contro">Controvérsia</span>
+      </div>
+      <p class="muted" style="margin-top:10px">Esses rótulos aparecem ao longo do arquivo. Quando a aula e a diretriz divergirem, as duas versões ficam lado a lado.</p>
+    </div>
+    <div>
+      <div class="grid g2" style="gap:10px">
+        <div class="kpi"><span>Nível</span><b>Graduação → avançado</b></div>
+        <div class="kpi"><span>Verificação científica</span><b>15/10/2026</b></div>
+        <div class="kpi"><span>Versão do arquivo</span><b>1.0</b></div>
+        <div class="kpi"><span>Aula / prova</span><b>16/10 · AV Somativa 12–13/11</b></div>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <h4>Tempo estimado</h4>
+        <ul class="clean small" style="margin-bottom:0">
+          <li><strong>Essencial (M6, M8, M9 e M16):</strong> ~60 min</li>
+          <li><strong>Completo (todos os módulos + questões):</strong> ~5 a 6 h</li>
+          <li><strong>Revisão posterior:</strong> 3, 10 ou 30 min conforme o módulo 16</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="callout blue">
+    <h4>Lugar do tema no semestre <span class="tag t-aula">Material da disciplina</span></h4>
+    <p>Pelo <em>Guia de Orientações — Saúde da Mulher II, 2026.2</em> (cronograma teórico, turmas A e B, Profa. Arlene Fernandes), a aula <strong>“Doenças benignas e malignas da mama”</strong> ocorre na <strong>sexta-feira, 16/10/2026</strong>, no bloco de oncologia ginecológica: vem depois de <em>Neoplasia do colo uterino</em> (02/10) e de <em>Doenças benignas e malignas do corpo uterino</em> (09/10) e antes de <em>Massas anexiais e câncer de ovário</em> (23/10). Na página “Conteúdo das avaliações” o tema consta da <strong>Avaliação Somativa (12 ou 13/11/2026, 30 pontos)</strong>, da 2ª chamada (09 ou 10/12) e do exame especial (16 ou 17/12).</p>
+    <p style="margin-bottom:0"><strong>Conexões:</strong> o raciocínio de <em>estrogênio e risco</em> vem de <em>Climatério</em> (terapia hormonal) e de <em>Corpo uterino</em> (tamoxifeno); a lógica de <em>rastreamento → lesão precursora → tratamento precoce</em> é a mesma do <em>colo uterino</em>; BRCA e Lynch se encontram com <em>ovário</em> (aula de 23/10); a conduta na gestação conversa com os módulos obstétricos.</p>
+  </div>
+  <div class="callout warn">
+    <h4>Limitações desta versão — leia antes de estudar</h4>
+    <ul class="clean" style="margin-bottom:0">
+      <li><strong>Não tive acesso aos slides da Profa. Arlene para esta aula</strong> (não estavam na pasta “SM 2” do Drive até a geração deste arquivo). Nada aqui é atribuído à professora; concilie com os slides assim que os tiver.</li>
+      <li>O único material de mama da disciplina localizado foi o PDF de <strong>Patologia das mamas (Patologia Médica II, Profa. Astride de Freitas, 2025)</strong>, de período anterior — usado como <strong>pré-requisito/complemento</strong>, não como a aula de 16/10.</li>
+      <li>As páginas oficiais do Ministério da Saúde sobre a nova recomendação de mamografia (setembro/2025) <strong>não puderam ser abertas</strong> (acesso restrito/verificação). As recomendações de rastreamento foram resumidas a partir de reportagens e de uma nota técnica da SMS-SP que citam a diretriz; <strong>confira o texto oficial</strong>. Isso está marcado como <span class="tag t-contro">Controvérsia</span> no M7 e no M21.</li>
+      <li>Condutas de tratamento sistêmico (quimioterapia, imunoterapia, inibidores de CDK4/6) foram sintetizadas de conhecimento consolidado de diretrizes (NCCN/ESMO/St. Gallen) <strong>sem reabertura dos textos integrais</strong>; marcadas como <span class="tag t-inf">Inferência didática</span> onde cabe.</li>
+      <li>Material educacional: não substitui avaliação clínica individual, protocolo institucional ou supervisão docente.</li>
+    </ul>
+  </div>
+  <h3>Fontes-base efetivamente lidas</h3>
+  <div class="tblwrap"><table>
+    <caption>Documentos abertos para construir este arquivo (auditoria completa no módulo 21).</caption>
+    <thead><tr><th>Fonte</th><th>Tipo</th><th>Uso principal</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Guia de Orientações SM2 2026</strong> (cronograma e conteúdo das avaliações; páginas lidas como imagem)</td><td><span class="tag t-aula">Material da disciplina</span></td><td>Data, posição no semestre, avaliação</td></tr>
+      <tr><td><strong>Patologia das mamas 2025</strong> (Profa. Astride de Freitas, FCMMG)</td><td><span class="tag t-aula">Pré-requisito</span></td><td>Histologia, fibroadenoma, filoides, subtipos, fatores prognósticos</td></tr>
+      <tr><td><strong>Ministério da Saúde — ampliação do acesso à mamografia (set/2025)</strong>, via reportagem (Afya) e Nota Técnica SMS-SP 03/2025</td><td><span class="tag t-dir">Diretriz (fonte secundária)</span></td><td>Rastreamento no SUS</td></tr>
+      <tr><td><strong>INCA — Estimativa 2026–2028</strong>, via reportagem (CNN Brasil)</td><td><span class="tag t-dir">Dado oficial (fonte secundária)</span></td><td>Epidemiologia</td></tr>
+    </tbody></table></div>
+  <div class="toolbar no-print" style="margin-top:16px">
+    <input type="text" id="globalSearch" placeholder="Buscar em toda a aula (ex.: BI-RADS, sentinela, filoides)" aria-label="Busca global no conteúdo" style="flex:1 1 240px">
+    <button class="btn sm" id="btnSearchGo">Buscar</button>
+    <button class="btn sm" id="btnSearchClear">Limpar</button>
+    <button class="btn sm" id="btnExport">⬇ Exportar progresso (JSON)</button>
+    <button class="btn sm" id="btnImport">⬆ Importar</button>
+    <button class="btn sm" id="btnReset">⟲ Apagar dados</button>
+    <input type="file" id="fileImport" accept="application/json" hidden>
+  </div>
+  <p class="small" id="searchInfo" role="status" aria-live="polite"></p>
+</section>
+
+<section class="mod" id="m2" aria-labelledby="m2h">
+  <div class="mod-head">
+    <span class="mod-num">M2</span>
+    <h2 id="m2h">Como estudar esta aula</h2>
+    <p class="mod-sub">Escolha um percurso. A trilha muda o que é imprescindível, não a qualidade do estudo.</p>
+  </div>
+  <div class="grid g3">
+    <div class="card"><h4>🚀 Revisão rápida <span class="muted small">(45–60 min)</span></h4>
+      <ol class="steps small" style="margin-bottom:0"><li>M6 — modelo mental</li><li>M8 — tabelas comparativas</li><li>M9 — algoritmos (nódulo, BI-RADS, derrame)</li><li>M16 — revisão de 10 min e folha de véspera</li><li>M13 — 12 questões em modo prova</li></ol></div>
+    <div class="card"><h4>🎯 Domínio para prova <span class="muted small">(2h30–3h)</span></h4>
+      <ol class="steps small" style="margin-bottom:0"><li>M4 — teste diagnóstico</li><li>M5 — mapa de prioridades</li><li>M7 — camadas 1 a 3</li><li>M8 e M9 — tabelas e algoritmos</li><li>M12 — casos 1 a 3</li><li>M13 — banco completo</li><li>M14 — flashcards; M16 — revisão de 30 min</li></ol></div>
+    <div class="card"><h4>🔬 Domínio aprofundado <span class="muted small">(5–6 h)</span></h4>
+      <ol class="steps small" style="margin-bottom:0"><li>Tudo do percurso anterior</li><li>M7 — camada 4 (controvérsias e atualizações)</li><li>M11 — raciocínio clínico explícito</li><li>M12 — os 5 casos</li><li>M15 — mapa mental completo</li><li>M19 e M21 — transferência e fontes</li></ol></div>
+  </div>
+  <div class="callout neutral"><h4>Etapas do ciclo de aprendizagem</h4>
+    <p style="margin-bottom:0"><strong>1.</strong> Diagnóstico (M4) → <strong>2.</strong> Fundamentos (M6, M7 camada 1) → <strong>3.</strong> Aula completa (M7) → <strong>4.</strong> Raciocínio e aplicação (M9, M11) → <strong>5.</strong> Questões e casos (M12, M13) → <strong>6.</strong> Revisão ativa (M16) → <strong>7.</strong> Repetição espaçada (M14 + D1/D3/D7/D14/D30/D60).</p></div>
+  <p class="small muted">Regra prática: <strong>nunca leia duas vezes seguidas.</strong> Entre uma leitura e outra, feche a seção e tente recuperar de memória três coisas: um mecanismo, um critério e uma decisão.</p>
+</section>
+
+<section class="mod" id="m3" aria-labelledby="m3h">
+  <div class="mod-head">
+    <span class="mod-num">M3</span>
+    <h2 id="m3h">Objetivos e matriz de domínio</h2>
+    <p class="mod-sub">Marque cada objetivo quando conseguir explicá-lo em voz alta, sem consultar.</p>
+  </div>
+  <div class="callout gold"><h4>Origem dos objetivos <span class="tag t-inf">Inferência didática</span></h4>
+    <p style="margin-bottom:0">O Guia de Orientações não traz objetivos por aula; traz o título “Doenças benignas e malignas da mama”, a ementa (“oncologia ginecológica”) e as competências. Os objetivos abaixo foram <strong>derivados desses documentos, do material de patologia das mamas (2025) e das diretrizes</strong>. Se a professora fornecer objetivos oficiais, eles devem substituir esta lista.</p></div>
+  <div id="objList"></div>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card"><h4>Cobertura por objetivo</h4><div id="objCoverage" class="small">Responda às questões do módulo 13 para gerar seu desempenho por objetivo.</div></div>
+    <div class="card"><h4>Como esta aula avalia cada objetivo</h4><p class="small" style="margin-bottom:0">Todo objetivo aparece em pelo menos uma seção de conteúdo e em ao menos duas questões ou um caso clínico. O módulo 20 mostra o desempenho por objetivo e a seção a reler quando o acerto ficar abaixo de 70%.</p></div>
+  </div>
+</section>
+
+<section class="mod" id="m4" aria-labelledby="m4h">
+  <div class="mod-head">
+    <span class="mod-num">M4</span>
+    <h2 id="m4h">Pré-requisitos e teste diagnóstico</h2>
+    <p class="mod-sub">Cinco perguntas rápidas. Responda antes de ler o conteúdo — o objetivo é descobrir lacunas, não acertar.</p>
+  </div>
+  <details class="acc"><summary>Pré-requisitos indispensáveis (revisão de 5 minutos)</summary>
+    <div class="acc-body"><div class="grid g2">
+      <div>
+        <h4>1. Anatomia e histologia da mama</h4>
+        <p class="small">Cada mama tem 15–20 lobos; cada lobo drena por um ducto lactífero até o mamilo. A <strong>unidade ductolobular terminal (UDLT)</strong> — ducto terminal + ácinos — é onde nasce a maioria das doenças proliferativas e dos cânceres. O epitélio tem células luminais e mioepiteliais. <span class="tag t-aula">Pré-requisito</span> (Patologia das mamas 2025).</p>
+        <h4>2. Drenagem linfática</h4>
+        <p class="small">Cerca de 75% da linfa drena para a <strong>axila</strong> (níveis I, II, III de Berg, em relação ao peitoral menor); o restante, para a cadeia mamária interna e supraclavicular. O <strong>linfonodo sentinela</strong> é o primeiro de drenagem.</p>
+        <h4>3. Influência hormonal</h4>
+        <p class="small">Estrogênio e progesterona estimulam o epitélio mamário ciclicamente: explicam a mastalgia cíclica, as alterações fibrocísticas e o papel de exposição hormonal prolongada no risco de câncer.</p>
+      </div>
+      <div>
+        <h4>4. Mamografia, ultrassonografia e RM</h4>
+        <p class="small">Mamografia = melhor para microcalcificações e rastreamento em ≥40 anos; ultrassonografia = melhor para distinguir cisto de sólido e para mamas densas/jovens; RM = alta sensibilidade, usada em alto risco e em problemas específicos.</p>
+        <h4>5. Biópsia</h4>
+        <p class="small">PAAF (citologia), agulha grossa/<em>core biopsy</em> (histologia + imuno-histoquímica) e vácuo (mamotomia). Diagnóstico de câncer é sempre <strong>histológico</strong>.</p>
+        <h4>6. Fases da vida</h4>
+        <p class="small">Adolescência (fibroadenoma, ginecomastia), reprodutiva (mastalgia, cistos), gestação/lactação (mastite, galactocele, câncer associado à gestação), climatério (câncer, TH).</p>
+      </div>
+    </div></div></details>
+  <div id="diagQuiz" class="no-print" style="margin-top:14px"></div>
+  <div id="diagResult" role="status" aria-live="polite"></div>
+</section>
+
+<section class="mod" id="m5" aria-labelledby="m5h">
+  <div class="mod-head">
+    <span class="mod-num">M5</span>
+    <h2 id="m5h">Mapa de prioridades</h2>
+    <p class="mod-sub">O que estudar primeiro quando o tempo é curto — e que tipo de esforço mental cada item exige.</p>
+  </div>
+  <div class="callout neutral"><h4>Como ler este mapa</h4>
+    <p style="margin-bottom:0"><strong>Compreenda</strong> = mecanismo. <strong>Reconheça</strong> = padrão numa vinheta. <strong>Decore</strong> = critério ou número. A coluna de incidência é <span class="tag t-inf">Inferência didática</span> (estimativa fundamentada, não dado quantitativo).</p></div>
+  <div class="tblwrap"><table>
+    <caption>Mapa de prioridades — mama.</caption>
+    <thead><tr><th>Conteúdo</th><th class="nowrap">Nível</th><th class="nowrap">Esforço</th><th>Por quê</th></tr></thead>
+    <tbody>
+      <tr><td><strong>BI-RADS e a conduta de cada categoria (0–6)</strong></td><td><span class="pill d1">Imprescindível</span> <span class="pill d3">Alta incidência</span></td><td>Decore + Decida</td><td>Pergunta recorrente em prova e na prática</td></tr>
+      <tr><td><strong>Nódulo palpável: ordem de exames e “tripla avaliação”</strong></td><td><span class="pill d1">Imprescindível</span> <span class="pill d3">Alta incidência</span></td><td>Compreenda + Decida</td><td>Define o que fazer no ambulatório</td></tr>
+      <tr><td><strong>Fibroadenoma × cisto × filoides × câncer</strong></td><td><span class="pill d1">Imprescindível</span> <span class="pill d3">Alta incidência</span></td><td>Reconheça</td><td>Diagnóstico diferencial clássico</td></tr>
+      <tr><td><strong>Derrame papilar: fisiológico × patológico</strong></td><td><span class="pill d3">Alta incidência</span></td><td>Reconheça + Decida</td><td>Questão de conduta frequente</td></tr>
+      <tr><td><strong>Rastreamento: faixa etária, periodicidade, alto risco</strong></td><td><span class="pill d1">Imprescindível</span> <span class="pill d3">Alta incidência</span></td><td>Decore + Controvérsia</td><td>Muda com as diretrizes — conheça as divergências</td></tr>
+      <tr><td><strong>Fatores de risco e quando pensar em BRCA</strong></td><td><span class="pill d3">Alta incidência</span></td><td>Compreenda</td><td>Aconselhamento e rastreamento diferenciado</td></tr>
+      <tr><td><strong>Subtipos moleculares (IHQ) e o que mudam no tratamento</strong></td><td><span class="pill d3">Alta incidência</span></td><td>Compreenda + Decore</td><td>Núcleo do tratamento moderno</td></tr>
+      <tr><td><strong>Estadiamento TNM resumido e sinais de T4</strong></td><td><span class="pill d2">Aprofundamento</span> <span class="pill d3">Alta incidência</span></td><td>Reconheça + Decore</td><td>Define cirurgia e neoadjuvância</td></tr>
+      <tr><td><strong>Cirurgia conservadora × mastectomia; sentinela × esvaziamento axilar</strong></td><td><span class="pill d2">Aprofundamento</span> <span class="pill d3">Alta incidência</span></td><td>Compreenda + Decida</td><td>Pergunta de conduta clássica</td></tr>
+      <tr><td><strong>Mastite e abscesso; mastalgia</strong></td><td><span class="pill d3">Alta incidência</span></td><td>Reconheça + Decida</td><td>Muito frequente na atenção primária</td></tr>
+      <tr><td><strong>Paget, inflamatório, câncer na gestação e masculino</strong></td><td><span class="pill d2">Aprofundamento</span></td><td>Reconheça</td><td>Situações especiais</td></tr>
+      <tr><td><strong>Imunoterapia, anti-HER2 novos, CDK4/6, assinaturas genômicas</strong></td><td><span class="pill d2">Especialista</span></td><td>Reconheça</td><td>Atualização; mais residência que graduação</td></tr>
+    </tbody></table></div>
+</section>
+
+<section class="mod" id="m6" aria-labelledby="m6h">
+  <div class="mod-head">
+    <span class="mod-num">M6</span>
+    <h2 id="m6h">Visão geral e modelo mental</h2>
+    <p class="mod-sub">A grande ideia, a cadeia causal e os erros conceituais que atrapalham desde o começo.</p>
+  </div>
+  <div class="callout"><h4>A grande ideia em uma frase</h4>
+    <p style="margin-bottom:0">Quase toda queixa mamária é benigna — mas <strong>a mama é o órgão em que o câncer mais é encontrado cedo por imagem</strong>, e a pergunta de segurança é sempre a mesma: “<em>esta lesão é maligna até que se prove o contrário?</em>”. A resposta se constrói por <strong>tripla avaliação</strong>: clínica + imagem (BI-RADS) + patologia.</p></div>
+  <h3>Cadeia causal e fluxo de decisão</h3>
+  <figure>
+    <svg viewBox="0 0 900 250" role="img" aria-labelledby="fig1t fig1d">
+      <title id="fig1t">Tripla avaliação em doenças da mama</title>
+      <desc id="fig1d">Três caixas — avaliação clínica, imagem com BI-RADS e patologia por biópsia — convergem para a conduta: seguimento, biópsia, ou tratamento.</desc>
+      <defs><marker id="ar1" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="var(--ink-3)"/></marker></defs>
+      <rect x="20" y="20" width="230" height="70" rx="8" fill="var(--blue-soft)" stroke="var(--blue)"/>
+      <text class="svg-lbl" x="135" y="48" text-anchor="middle" font-weight="bold">1 · Clínica</text>
+      <text class="svg-lbl-s" x="135" y="68" text-anchor="middle">história, exame das mamas e axilas</text>
+      <rect x="20" y="100" width="230" height="70" rx="8" fill="var(--purple-soft)" stroke="var(--purple)"/>
+      <text class="svg-lbl" x="135" y="128" text-anchor="middle" font-weight="bold">2 · Imagem</text>
+      <text class="svg-lbl-s" x="135" y="148" text-anchor="middle">mamografia ± US ± RM → BI-RADS</text>
+      <rect x="20" y="180" width="230" height="60" rx="8" fill="var(--gold-soft)" stroke="var(--gold)"/>
+      <text class="svg-lbl" x="135" y="207" text-anchor="middle" font-weight="bold">3 · Patologia</text>
+      <text class="svg-lbl-s" x="135" y="226" text-anchor="middle">core biopsy (± IHQ) — quando indicada</text>
+      <path d="M250 55 L330 125" stroke="var(--ink-3)" stroke-width="1.6" marker-end="url(#ar1)"/>
+      <path d="M250 135 L330 135" stroke="var(--ink-3)" stroke-width="1.6" marker-end="url(#ar1)"/>
+      <path d="M250 210 L330 145" stroke="var(--ink-3)" stroke-width="1.6" marker-end="url(#ar1)"/>
+      <rect x="330" y="95" width="160" height="80" rx="10" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+      <text class="svg-lbl" x="410" y="125" text-anchor="middle" font-weight="bold">Concordância?</text>
+      <text class="svg-lbl-s" x="410" y="145" text-anchor="middle">os três dizem a mesma coisa?</text>
+      <text class="svg-lbl-s" x="410" y="160" text-anchor="middle">Se não: repetir/biopsiar</text>
+      <path d="M490 135 L560 70" stroke="var(--ink-3)" stroke-width="1.6" marker-end="url(#ar1)"/>
+      <path d="M490 135 L560 135" stroke="var(--ink-3)" stroke-width="1.6" marker-end="url(#ar1)"/>
+      <path d="M490 135 L560 200" stroke="var(--ink-3)" stroke-width="1.6" marker-end="url(#ar1)"/>
+      <rect x="560" y="40" width="320" height="60" rx="8" fill="var(--green-soft)" stroke="var(--green)"/>
+      <text class="svg-lbl" x="720" y="66" text-anchor="middle" font-weight="bold">Benigno concordante</text>
+      <text class="svg-lbl-s" x="720" y="84" text-anchor="middle">tranquilizar / seguimento / exérese se indicada</text>
+      <rect x="560" y="105" width="320" height="60" rx="8" fill="var(--gold-soft)" stroke="var(--gold)"/>
+      <text class="svg-lbl" x="720" y="131" text-anchor="middle" font-weight="bold">Lesão de risco / indeterminada</text>
+      <text class="svg-lbl-s" x="720" y="149" text-anchor="middle">atipia, filoides, discordância → exérese</text>
+      <rect x="560" y="175" width="320" height="60" rx="8" fill="var(--red-soft)" stroke="var(--red)"/>
+      <text class="svg-lbl" x="720" y="201" text-anchor="middle" font-weight="bold">Maligno</text>
+      <text class="svg-lbl-s" x="720" y="219" text-anchor="middle">estadiar, subtipo (IHQ), equipe multidisciplinar</text>
+    </svg>
+    <figcaption><strong>Figura 1.</strong> A tripla avaliação. Nenhuma das três peças basta sozinha: um nódulo palpável com imagem benigna e core biopsy benigna e concordante pode ser seguido; uma discordância (nódulo duro, “BI-RADS 2”) obriga a investigar mais. <span class="tag t-inf">Inferência didática</span></figcaption>
+  </figure>
+  <h3>Erros conceituais mais comuns</h3>
+  <div class="grid g2">
+    <div class="card"><h4>“Nódulo doloroso não é câncer”</h4><p class="small" style="margin-bottom:0">A dor isolada (mastalgia) tem risco muito baixo de malignidade, mas um câncer pode doer. O nódulo palpável é o que manda, não a dor.</p></div>
+    <div class="card"><h4>“Mamografia normal exclui câncer”</h4><p class="small" style="margin-bottom:0">Em mamas densas e em tumores de crescimento rápido, a mamografia perde casos. <strong>Nódulo palpável suspeito com mamografia normal → ultrassonografia e, se preciso, biópsia.</strong></p></div>
+    <div class="card"><h4>“Fibroadenoma sempre se opera”</h4><p class="small" style="margin-bottom:0">Fibroadenoma típico em mulher jovem, com imagem e (se feita) core biopsy concordantes, pode ser acompanhado. Cirurgia: dúvida, crescimento, &gt;3 cm, desejo da paciente.</p></div>
+    <div class="card"><h4>“Mastite que não melhora é só mastite”</h4><p class="small" style="margin-bottom:0">Eritema e edema persistentes após antibiótico, ou fora da lactação, podem ser <strong>carcinoma inflamatório</strong>: biópsia.</p></div>
+  </div>
+</section>
+<section class="mod" id="m7" aria-labelledby="m7h">
+  <div class="mod-head">
+    <span class="mod-num">M7</span>
+    <h2 id="m7h">Aula completa em camadas progressivas</h2>
+    <p class="mod-sub">Camada 1 fundamentos · Camada 2 as doenças · Camada 3 investigação, tratamento e rastreamento · Camada 4 refinamento e atualizações.</p>
+  </div>
+  <div class="toolbar no-print">
+    <span class="small">Camadas:</span>
+    <button class="btn sm" data-layer="all">Abrir tudo</button>
+    <button class="btn sm" data-layer="none">Fechar tudo</button>
+    <button class="btn sm" data-layer="1">Só camada 1</button>
+    <button class="btn sm" data-layer="3">Só camada 3</button>
+  </div>
+
+<h3 style="margin-top:20px">Camada 1 — Fundamentos</h3>
+
+<details class="acc layer-1" open><summary>1.1 Anatomia, histologia e drenagem linfática aplicadas</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>Estrutura:</strong> 15–20 lobos, cada um com um ducto lactífero que se abre no mamilo; estroma fibroadiposo e ligamentos de Cooper. A <strong>UDLT</strong> (ducto terminal + ácinos) é a unidade funcional e o ponto de origem da maioria das lesões proliferativas, do carcinoma <em>in situ</em> e do invasivo. <span class="tag t-aula">Pré-requisito</span></li>
+<li><strong>Quadrantes:</strong> cerca de metade dos carcinomas está no <strong>quadrante superior externo</strong> (mais tecido glandular, incluindo a cauda axilar de Spence).</li>
+<li><strong>Linfáticos:</strong> ~75% para axila (níveis I, II, III em relação ao peitoral menor), restante para mamária interna e supraclavicular. O <strong>número de linfonodos axilares comprometidos</strong> é o fator prognóstico clássico mais importante. <span class="tag t-aula">Pré-requisito</span></li>
+<li><strong>Estímulo hormonal:</strong> epitélio com receptores de estrogênio e progesterona; ciclo → mastalgia cíclica; exposição prolongada → risco.</li>
+</ul></div></details>
+
+<details class="acc layer-1" open><summary>1.2 Queixas mamárias e o que cada uma pesa</summary><div class="acc-body">
+<p>Três queixas guiam a avaliação, com risco de malignidade crescente (dados do material de Patologia 2025, ordem de grandeza): <strong>dor/mastalgia</strong> (~1% ou menos), <strong>descarga papilar</strong> (~5%), <strong>massa palpável</strong> (~20%, aumentando com a idade: ~10% antes dos 40 e ~60% após os 50). <span class="tag t-aula">Material da disciplina (Patologia 2025)</span></p>
+<ul class="clean">
+<li><strong>Massa palpável:</strong> sempre investigar; a maioria é benigna, mas o risco sobe com a idade, a consistência dura, os limites mal definidos e a fixação.</li>
+<li><strong>Descarga papilar:</strong> o que importa é saber se é <em>fisiológica</em> ou <em>patológica</em> (ver 2.7).</li>
+<li><strong>Dor:</strong> cíclica (pré-menstrual) ou não cíclica; raramente é câncer isoladamente.</li>
+<li><strong>Alterações da pele e do mamilo:</strong> retração, eczema persistente, “casca de laranja”, ulceração → sinais de alarme.</li>
+</ul></div></details>
+
+<details class="acc layer-1" open><summary>1.3 Epidemiologia e impacto do câncer de mama</summary><div class="acc-body">
+<ul class="clean">
+<li>É o <strong>câncer mais incidente entre as mulheres brasileiras</strong> (excluindo pele não melanoma) e a principal causa de morte por câncer em mulheres. A estimativa do INCA para 2026–2028 é de cerca de <strong>78,6 mil casos novos por ano</strong>, com taxa bruta aproximada de <strong>71,6 por 100 mil mulheres</strong> (maior no Sudeste e Sul). <span class="tag t-dir">INCA 2026–2028</span> <span class="tag t-contro">conferir em fonte primária</span></li>
+<li>Raro antes dos 25 anos; a incidência aumenta a partir dos 30 e atinge o pico entre 50–60 anos. <span class="tag t-aula">Patologia 2025</span></li>
+<li>Apesar do aumento da incidência, a <strong>mortalidade tem caído</strong> em países com rastreamento e tratamento acessíveis (mamografia, melhor conhecimento biológico, novas terapias). No Brasil, o diagnóstico tardio ainda é um problema central.</li>
+</ul></div></details>
+
+<h3 style="margin-top:20px">Camada 2 — As doenças</h3>
+
+<details class="acc layer-2"><summary>2.1 Mastalgia e alterações funcionais benignas da mama (fibrocísticas)</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>Alterações fibrocísticas</strong> (hoje chamadas de “alterações funcionais benignas”): causa mais comum de massa palpável/“adensamento” entre 30–45 anos; desequilíbrio da resposta à estimulação hormonal cíclica. Histologia não proliferativa: cistos, fibrose, metaplasia apócrina, adenose. <strong>Sem risco aumentado de câncer</strong>, mas “imitam” câncer na clínica e na imagem. <span class="tag t-aula">Patologia 2025</span></li>
+<li><strong>Mastalgia cíclica:</strong> bilateral, piora na fase lútea, melhora com a menstruação. Tratamento: tranquilizar (após exame e, se ≥40 anos, mamografia atualizada), suporte adequado (sutiã), analgésico simples/AINE, reduzir cafeína é de benefício incerto; óleo de prímula tem evidência fraca; tamoxifeno ou danazol apenas em casos graves refratários, em serviço especializado.</li>
+<li><strong>Mastalgia não cíclica:</strong> unilateral/focal; pensar em cisto roto, trauma, mastite, origem torácica (costocondrite/Tietze), medicamentos.</li>
+<li><strong>Cistos:</strong> frequentes entre 35–50 anos. <strong>Cisto simples</strong> à ultrassonografia = BI-RADS 2 (benigno); punção só se sintomático ou duvidoso. <strong>Cisto complicado/complexo</strong> (septos, componente sólido) → biópsia/seguimento conforme BI-RADS.</li>
+</ul></div></details>
+
+<details class="acc layer-2"><summary>2.2 Fibroadenoma</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>O que é:</strong> tumor benigno <em>fibroepitelial</em> mais comum da mama; proliferação de epitélio (ductos) e estroma. Pico entre 20 e 35 anos; hormônio-dependente (cresce na gestação e na fase lútea, regride na pós-menopausa). <span class="tag t-aula">Patologia 2025</span></li>
+<li><strong>Clínica:</strong> nódulo <strong>móvel, indolor, bem delimitado, elástico/borrachoso</strong> (“bola de gude”), em geral único, com 1–3 cm. Pode ser múltiplo/bilateral. <strong>Gigante</strong> &gt;5 cm; <strong>juvenil</strong> em adolescentes.</li>
+<li><strong>Imagem:</strong> à ultrassonografia, nódulo oval, de eixo paralelo à pele (“mais largo que alto”), margens circunscritas, hipoecoico homogêneo, reforço acústico posterior ausente/discreto. Na mamografia de mulheres idosas pode ter calcificações “em pipoca”.</li>
+<li><strong>Conduta:</strong> nódulo com características típicas, em mulher jovem, concordante (clínica + imagem ± core) → <strong>seguimento clínico/ultrassonográfico</strong> (BI-RADS 3 se não biopsiado). <strong>Exérese</strong> se: dúvida diagnóstica, crescimento, &gt;3 cm (critério usual), sintoma, achados atípicos ao core, ou por desejo da paciente. <span class="tag t-inf">Inferência didática</span> (limites de tamanho variam entre serviços)</li>
+<li><strong>Risco:</strong> fibroadenoma simples não aumenta de forma relevante o risco de câncer; o <em>complexo</em> (cistos &gt;3 mm, adenose esclerosante, calcificações epiteliais, alterações papilares) aumenta discretamente.</li>
+</ul></div></details>
+
+<details class="acc layer-2"><summary>2.3 Tumor filoides (phyllodes)</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>O que é:</strong> tumor fibroepitelial com estroma hipercelular e fendas “em folha” (do grego <em>phyllon</em>); parece fibroadenoma mas tem comportamento <strong>variável</strong>: benigno, borderline ou maligno (metástases hematogênicas, ~20% dos malignos; pulmões). Pico na 5ª década. <span class="tag t-aula">Patologia 2025</span></li>
+<li><strong>Suspeitar:</strong> nódulo de <strong>crescimento rápido</strong> e volumoso, em mulher mais velha que o habitual para fibroadenoma, ou &gt;4 cm; core biopsy pode não distinguir de fibroadenoma celular.</li>
+<li><strong>Critérios de malignidade:</strong> tamanho &gt;4 cm, margens infiltrativas, atipia estromal, mitoses numerosas, necrose.</li>
+<li><strong>Conduta:</strong> <strong>exérese ampla com margens livres (≥1 cm)</strong>; <strong>não se faz esvaziamento axilar de rotina</strong> (a disseminação é hematogênica e os linfonodos raramente comprometidos); mastectomia para tumores grandes/malignos em que não se obtém margem. Recidiva local é frequente; seguimento.</li>
+</ul></div></details>
+
+<details class="acc layer-2"><summary>2.4 Papiloma intraductal e doenças do ducto</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>Papiloma intraductal solitário:</strong> proliferação papilar em ducto principal (retroareolar), 35–55 anos; causa mais comum de <strong>descarga papilar sanguinolenta/“água de rocha” uniductal espontânea</strong>. Conduta: investigar (US, mamografia; ductografia ou RM se necessário) e <strong>ressecar o ducto acometido</strong> (microdocectomia) — pelo risco de atipia/carcinoma associado.</li>
+<li><strong>Ectasia ductal (mastite periductal):</strong> dilatação dos ductos subareolares em mulheres mais velhas/tabagistas; secreção espessa, retração mamilar, mastite recorrente. Fumar é fator importante.</li>
+<li><strong>Papilomatose múltipla:</strong> mais jovens, bilateral, maior risco.</li>
+</ul></div></details>
+
+<details class="acc layer-2"><summary>2.5 Infecções e inflamações: mastite, abscesso, necrose gordurosa</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>Mastite lactacional (puerperal):</strong> estase de leite + fissura mamilar → infecção, em geral por <strong><em>Staphylococcus aureus</em></strong>. Dor, eritema, calor, febre, mal-estar. <strong>Manter a amamentação/esvaziamento</strong>, analgesia, e antibiótico com cobertura para estafilococo (por exemplo, cefalexina ou dicloxacilina por 7–10 dias) se sintomas &gt;24 h ou piora; considerar MRSA conforme local. <span class="tag t-inf">Inferência didática</span> (doses conforme protocolo local)</li>
+<li><strong>Abscesso mamário:</strong> coleção flutuante ou à US; tratamento por <strong>punção aspirativa guiada por US</strong> (preferida) ou drenagem cirúrgica, + antibiótico; manter amamentação quando possível.</li>
+<li><strong>Mastite não puerperal:</strong> periareolar (ectasia, tabagismo) ou lobular granulomatosa idiopática (jovem, nódulo inflamatório, tratamento complexo). <strong>Mastite que recidiva ou não responde = biópsia</strong> para afastar carcinoma inflamatório.</li>
+<li><strong>Necrose gordurosa:</strong> após trauma/cirurgia/radioterapia; nódulo duro, pode imitar câncer (calcificações em “casca de ovo”, cistos oleosos); biópsia confirma.</li>
+</ul></div></details>
+
+<details class="acc layer-2"><summary>2.6 Lesões proliferativas e de risco (atipia)</summary><div class="acc-body">
+<p>A histologia benigna é classificada pelo risco que confere. <span class="tag t-evi">Evidência científica</span></p>
+<div class="tblwrap"><table><thead><tr><th>Categoria</th><th>Exemplos</th><th>Risco relativo de câncer</th><th>Conduta usual</th></tr></thead><tbody>
+<tr><td><strong>Não proliferativa</strong></td><td>cistos, fibrose, metaplasia apócrina, adenose simples</td><td>~1 (sem aumento)</td><td>Tranquilizar; seguimento de rotina</td></tr>
+<tr><td><strong>Proliferativa sem atipia</strong></td><td>hiperplasia ductal usual, papiloma, adenose esclerosante, fibroadenoma complexo</td><td>~1,5–2</td><td>Seguimento; exérese se discordante</td></tr>
+<tr><td><strong>Proliferativa com atipia</strong></td><td>hiperplasia ductal atípica (HDA), hiperplasia lobular atípica, neoplasia lobular <em>in situ</em> (CLIS/NLIS)</td><td>~4–5</td><td>HDA no <em>core</em> → exérese cirúrgica (pode subestimar CDIS); risco → aconselhamento e redução de risco</td></tr>
+</tbody></table></div>
+<p class="small">Lesões “B3” (incerto potencial maligno: atipia, cicatriz radial/lesão esclerosante complexa, papiloma com atipia, tumor filoides benigno/borderline) costumam exigir <strong>exérese</strong>, pela possibilidade de subestimação da biópsia. <span class="tag t-inf">Inferência didática</span></p></div></details>
+
+<details class="acc layer-2"><summary>2.7 Descarga papilar</summary><div class="acc-body">
+<div class="grid g2">
+<div class="card"><h4>Fisiológica (benigna)</h4><ul class="clean small" style="margin-bottom:0">
+<li>Bilateral, <strong>multiductal</strong>, aparece à compressão (provocada)</li>
+<li>Cores variadas (esverdeada, acastanhada, branca)</li>
+<li>Galactorreia: dosar <strong>prolactina</strong>, TSH, βhCG; revisar medicamentos (antipsicóticos, metoclopramida, antidepressivos)</li>
+<li>Conduta: tranquilizar; investigar causa da galactorreia</li></ul></div>
+<div class="card"><h4>Patológica (suspeita)</h4><ul class="clean small" style="margin-bottom:0">
+<li><strong>Unilateral, uniductal, espontânea</strong></li>
+<li><strong>Sanguinolenta/serossanguinolenta</strong> ou “água de rocha” (cristalina)</li>
+<li>Pode haver nódulo associado</li>
+<li>Conduta: mamografia + US (± RM/ductografia); <strong>excisão do ducto</strong> mesmo com imagens normais, em geral; citologia do derrame tem baixa sensibilidade</li></ul></div>
+</div>
+<p class="small">Causas da patológica: papiloma intraductal (a mais comum), ectasia, carcinoma (~5–10% dos casos). <span class="tag t-aula">Patologia 2025</span> <span class="tag t-inf">Inferência didática</span> (percentuais variam entre séries)</p></div></details>
+
+<details class="acc layer-2"><summary>2.8 Ginecomastia e doenças da mama masculina</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>Ginecomastia:</strong> aumento do tecido glandular (palpável, subareolar, concêntrico). Fisiológica (neonatal, puberal, senescente); causas: medicamentos (espironolactona, cimetidina, antipsicóticos, anabolizantes), cirrose, hipogonadismo, hipertireoidismo, tumores produtores de hCG/estrogênio. Investigar se persistente/assimétrica/nodular.</li>
+<li><strong>Câncer de mama masculino:</strong> ~1% dos casos; nódulo duro excêntrico, retração/ulceração mamilar; <strong>BRCA2</strong> e síndrome de Klinefelter são fatores; tratamento como na mulher; teste genético recomendado.</li>
+</ul></div></details>
+
+<details class="acc layer-2"><summary>2.9 Câncer de mama: fatores de risco e genética</summary><div class="acc-body">
+<div class="grid g2">
+<div class="card"><h4>Risco aumentado</h4><ul class="clean small" style="margin-bottom:0">
+<li>Sexo feminino; <strong>idade</strong></li>
+<li><strong>História familiar</strong> (1º grau; início precoce; ovário; masculino; bilateral)</li>
+<li><strong>Variantes germinativas</strong>: <em>BRCA1/BRCA2</em> (risco vitalício aproximado até ~70–80 anos de 55–70% e 45–70%, respectivamente), <em>TP53</em>, <em>PTEN</em>, <em>PALB2</em>, <em>CHEK2</em>, <em>ATM</em></li>
+<li>Radioterapia torácica na infância/juventude (Hodgkin)</li>
+<li>Menarca precoce, menopausa tardia, nuliparidade/1ª gestação tardia (&gt;30 anos), não amamentar</li>
+<li>Terapia hormonal combinada (estrogênio + progestagênio) prolongada</li>
+<li>Obesidade (pós-menopausa), álcool, sedentarismo</li>
+<li>Mama densa; lesão proliferativa com atipia prévia; CLIS</li></ul></div>
+<div class="card"><h4>Proteção / modificáveis</h4><ul class="clean small" style="margin-bottom:0">
+<li>Amamentação prolongada</li>
+<li>Atividade física regular, peso saudável</li>
+<li>Reduzir álcool; não fumar</li>
+<li>Gestação precoce (&lt;30 anos)</li>
+<li>Quimioprevenção (tamoxifeno, raloxifeno, inibidores de aromatase) em alto risco selecionado</li>
+<li>Cirurgia redutora de risco (mastectomia/salpingo-ooforectomia) em portadoras de BRCA, após aconselhamento</li></ul></div></div>
+<p><strong>Hereditário × esporádico:</strong> 5–10% são hereditários; ~90% dos hereditários por BRCA1/2. <strong>Sinais de alerta para hereditariedade:</strong> início &lt;45–50 anos; triplo-negativo ≤60 anos; bilateral; ≥3 casos na família; câncer de ovário; câncer de mama masculino; ancestralidade asquenaze. <span class="tag t-aula">Patologia 2025</span> <span class="tag t-evi">Evidência científica</span></p>
+</div></details>
+
+<details class="acc layer-2"><summary>2.10 Carcinoma <em>in situ</em> e invasivo: tipos, graus e subtipos moleculares</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>Carcinoma ductal <em>in situ</em> (CDIS):</strong> ~25% dos diagnósticos mamográficos recentes; geralmente <strong>microcalcificações</strong> agrupadas/segmentares; graus nucleares baixo, intermediário e alto (comedocarcinoma). Sem invasão do estroma; potencial de progressão. <span class="tag t-aula">Patologia 2025</span></li>
+<li><strong>Carcinoma lobular <em>in situ</em> (CLIS/NLIS):</strong> marcador de risco, em geral achado incidental; E-caderina negativa.</li>
+<li><strong>Invasivo:</strong> <strong>tipo não especial (NST/ductal SOE)</strong> ~75%; <strong>lobular</strong> 5–15% (perda de E-caderina, “fila indiana”, bilateral/multicêntrico, metástases em serosas e TGI); tubular, mucinoso, medular, etc. (tipos especiais; melhor prognóstico em geral). <span class="tag t-aula">Patologia 2025</span></li>
+<li><strong>Grau histológico (Nottingham):</strong> túbulos + pleomorfismo nuclear + mitoses → grau I–III.</li>
+</ul>
+<div class="tblwrap"><table><caption>Subtipos por imuno-histoquímica (consenso de St. Gallen) — o que decide o tratamento sistêmico.</caption>
+<thead><tr><th>Subtipo</th><th>RE / RP</th><th>HER2</th><th>Ki-67 / grau</th><th>Tratamento-chave</th></tr></thead><tbody>
+<tr><td><strong>Luminal A</strong></td><td>RE+ e RP+ (≥20%)</td><td>−</td><td>baixo / G1–2</td><td>Hormonioterapia; quimio pouco necessária</td></tr>
+<tr><td><strong>Luminal B HER2−</strong></td><td>RE+, RP baixo ou −</td><td>−</td><td>alto / G2–3</td><td>Hormonioterapia ± quimioterapia</td></tr>
+<tr><td><strong>Luminal B HER2+</strong></td><td>RE+</td><td>+</td><td>variável</td><td>Quimioterapia + anti-HER2 + hormonioterapia</td></tr>
+<tr><td><strong>HER2 puro</strong></td><td>RE−, RP−</td><td>+</td><td>alto</td><td>Quimioterapia + anti-HER2</td></tr>
+<tr><td><strong>Triplo-negativo (basal)</strong></td><td>RE−, RP−</td><td>−</td><td>alto / G3</td><td>Quimioterapia ± imunoterapia; BRCA → considerar PARP</td></tr>
+</tbody></table></div></div></details>
+
+<details class="acc layer-2"><summary>2.11 Situações especiais: Paget, inflamatório, gestação</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>Doença de Paget do mamilo:</strong> eczema/descamação/ulceração <strong>unilateral</strong> do complexo areolopapilar que não cura com corticoide; quase sempre associada a carcinoma subjacente (CDIS ou invasivo). <strong>Biópsia do mamilo</strong> (punch/incisional) + imagem.</li>
+<li><strong>Carcinoma inflamatório:</strong> eritema, edema (“casca de laranja”), calor, ≥1/3 da mama, evolução rápida (&lt;6 meses), com ou sem massa; é <strong>T4d</strong>; pior prognóstico (êmbolos linfáticos dérmicos). Confunde-se com mastite — biópsia de pele/tumor. <span class="tag t-aula">Patologia 2025</span></li>
+<li><strong>Câncer na gestação/lactação:</strong> raro, mas o diagnóstico costuma ser tardio por atribuir nódulo/ingurgitamento à gravidez; US é o 1º exame, mamografia com proteção abdominal é segura; <strong>core biopsy</strong> é segura. Tratar: cirurgia em qualquer trimestre; quimioterapia contraindicada no 1º trimestre; radioterapia adiada para o pós-parto; <strong>trastuzumabe e hormonioterapia são contraindicados na gestação</strong>. Interrupção da gestação em geral não melhora o desfecho. <span class="tag t-inf">Inferência didática</span></li>
+</ul></div></details>
+
+<h3 style="margin-top:20px">Camada 3 — Investigação, tratamento e rastreamento</h3>
+
+<details class="acc layer-3" open><summary>3.1 Anamnese e exame clínico das mamas</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>Anamnese:</strong> queixa e tempo de evolução; relação com o ciclo; dor, nódulo, derrame (cor, uni/bilateral, espontâneo); mudanças de pele/mamilo; lactação e gestação; menarca/menopausa, paridade, amamentação; <strong>uso de hormônios e medicamentos</strong>; cirurgias/biópsias mamárias; radioterapia torácica; <strong>história familiar</strong> (câncer de mama, ovário, próstata, pâncreas; idade ao diagnóstico; bilateralidade; homens); tabagismo/álcool; mamografias prévias.</li>
+<li><strong>Exame:</strong> com privacidade, consentimento e acompanhante. <em>Inspeção estática e dinâmica</em> (simetria, retração, abaulamento, pele, mamilo/aréola, circulação venosa); <em>palpação</em> das mamas (sentada e deitada, com sistematização: radial ou espiral/“tiras verticais”) e <strong>das cadeias linfáticas</strong> (axilares, supra/infraclaviculares); expressão papilar suave, se indicada; descrever lesão (quadrante, distância do mamilo, tamanho em cm, consistência, mobilidade, limites, dor).</li>
+<li><strong>Sinais suspeitos:</strong> nódulo duro, irregular, fixo; retração de pele ou mamilo; “casca de laranja”; ulceração; eczema persistente do mamilo; derrame uniductal sanguinolento; linfonodo axilar duro/fixo/aderido.</li>
+</ul></div></details>
+
+<details class="acc layer-3" open><summary>3.2 Exames de imagem: o que pedir e a quem</summary><div class="acc-body">
+<div class="tblwrap"><table><thead><tr><th>Método</th><th>Melhor para</th><th>Limites</th></tr></thead><tbody>
+<tr><td><strong>Mamografia</strong> (digital; tomossíntese em alguns serviços)</td><td>Rastreamento ≥40 anos; microcalcificações; distorções/assimetrias; nódulos espiculados</td><td>Sensibilidade menor em <strong>mamas densas</strong> e em jovens; radiação (baixa)</td></tr>
+<tr><td><strong>Ultrassonografia</strong></td><td>Distinguir cisto × sólido; <strong>primeiro exame em &lt;30–35 anos</strong>, gestantes e lactantes; guia de biópsia; complemento em mamas densas; avaliação axilar</td><td>Operador-dependente; mal avalia microcalcificações; não é método de rastreamento isolado</td></tr>
+<tr><td><strong>Ressonância magnética</strong></td><td><strong>Alto risco</strong> (BRCA, RT torácica, risco vitalício ≥20–25%); avaliar extensão/multicentricidade em casos selecionados; implantes; câncer oculto com axila positiva; resposta à neoadjuvância</td><td>Custo, falso-positivos, disponibilidade; exige correlação</td></tr>
+</tbody></table></div>
+<p><strong>Regra de ouro no nódulo palpável:</strong> <em>&lt;30–35 anos</em> → ultrassonografia primeiro; <em>≥35–40 anos</em> → mamografia + ultrassonografia. Se o nódulo é palpável e suspeito e a imagem é “normal” → <strong>não tranquilizar: biopsiar</strong>. <span class="tag t-aula">Patologia 2025 (propedêutica)</span> <span class="tag t-inf">Inferência didática</span> (limites de idade variam)</p></div></details>
+
+<details class="acc layer-3" open><summary>3.3 BI-RADS: categorias e condutas</summary><div class="acc-body">
+<p>O <em>Breast Imaging-Reporting and Data System</em> (ACR) padroniza o laudo e a conduta. <span class="tag t-dir">BI-RADS (ACR)</span> <span class="tag t-prova">Padrão frequente de prova</span></p>
+<div class="tblwrap"><table><caption>BI-RADS (valores de probabilidade de malignidade aproximados).</caption>
+<thead><tr><th>Categoria</th><th>Significado</th><th>Malignidade</th><th>Conduta</th></tr></thead><tbody>
+<tr><td><strong>0</strong></td><td>Inconclusivo (precisa de avaliação adicional)</td><td>—</td><td>Complementar: incidências adicionais, US, RM ou comparar com exames antigos</td></tr>
+<tr><td><strong>1</strong></td><td>Negativo</td><td>~0%</td><td>Rastreamento de rotina</td></tr>
+<tr><td><strong>2</strong></td><td>Achado benigno (cisto simples, fibroadenoma calcificado, linfonodo intramamário…)</td><td>~0%</td><td>Rotina</td></tr>
+<tr><td><strong>3</strong></td><td>Provavelmente benigno</td><td>≤2%</td><td><strong>Seguimento curto:</strong> controle aos 6, 12 e 24 meses (unilateral inicial aos 6 meses); biópsia se crescer/mudar ou por desejo/ansiedade</td></tr>
+<tr><td><strong>4</strong> (A, B, C)</td><td>Suspeito</td><td>4A &gt;2–10%; 4B &gt;10–50%; 4C &gt;50–&lt;95%</td><td><strong>Biópsia</strong> (core ou vácuo)</td></tr>
+<tr><td><strong>5</strong></td><td>Altamente sugestivo de malignidade</td><td>≥95%</td><td><strong>Biópsia</strong> e planejamento terapêutico</td></tr>
+<tr><td><strong>6</strong></td><td>Malignidade já comprovada por biópsia</td><td>100%</td><td>Tratamento definitivo (cirurgia, neoadjuvância)</td></tr>
+</tbody></table></div>
+<ul class="clean">
+<li><strong>Achados mamográficos suspeitos:</strong> nódulo espiculado/irregular de alta densidade; <strong>microcalcificações pleomórficas finas, lineares ou ramificadas</strong>, em distribuição agrupada/segmentar/linear; distorção arquitetural; assimetria nova ou em evolução.</li>
+<li><strong>Densidade mamária</strong> (A–D): categorias C e D reduzem a sensibilidade da mamografia e aumentam o risco discretamente; informar a paciente e considerar US/RM complementar conforme normas locais.</li>
+</ul>
+<div class="callout gold"><p style="margin-bottom:0"><strong>Armadilha:</strong> BI-RADS 3 não é “não precisa fazer nada” (exige seguimento curto), e BI-RADS 0 não é “normal” (exige complementação).</p></div>
+</div></details>
+
+<details class="acc layer-3" open><summary>3.4 Biópsias: qual escolher</summary><div class="acc-body">
+<div class="tblwrap"><table><thead><tr><th>Técnica</th><th>Material</th><th>Indicação principal</th><th>Limitações</th></tr></thead><tbody>
+<tr><td><strong>PAAF</strong> (punção aspirativa por agulha fina)</td><td>Citologia</td><td>Cistos (esvaziar e analisar), linfonodos axilares</td><td>Material insuficiente; <strong>não diferencia in situ de invasivo</strong> nem fornece IHQ confiável</td></tr>
+<tr><td><strong>Core biopsy</strong> (agulha grossa)</td><td>Histologia + <strong>IHQ</strong> (RE, RP, HER2, Ki-67)</td><td>Nódulos suspeitos (BI-RADS 4–5); <strong>padrão atual para diagnóstico</strong></td><td>Falso-negativo por amostragem; discordância radiopatológica exige repetir/exérese</td></tr>
+<tr><td><strong>Mamotomia</strong> (vácuo, guia US/estereotaxia)</td><td>Histologia (maior volume)</td><td>Lesões não palpáveis, microcalcificações, remoção de pequenos nódulos benignos</td><td>Custo e acesso</td></tr>
+<tr><td><strong>Biópsia excisional</strong> (± marcação pré-cirúrgica por fio/ROLL/semente)</td><td>Peça cirúrgica</td><td>Lesões de risco/discordantes; diagnóstico e tratamento de lesões pequenas</td><td>Cirurgia; só após falha ou impossibilidade das percutâneas</td></tr>
+</tbody></table></div>
+<p class="small">Questão clássica: <em>biópsia com agulha grossa positiva permite diagnóstico definitivo e IHQ, é ambulatorial, mas <strong>resultado negativo não exclui malignidade</strong></em> (possível falso-negativo). <span class="tag t-aula">Patologia 2025</span></p></div></details>
+
+<details class="acc layer-3" open><summary>3.5 Estadiamento TNM (resumo) e exames de estadiamento</summary><div class="acc-body">
+<div class="grid g2">
+<div class="card"><h4>T (tumor)</h4><ul class="clean small" style="margin-bottom:0">
+<li><strong>Tis:</strong> in situ</li><li><strong>T1:</strong> ≤2 cm</li><li><strong>T2:</strong> &gt;2 até 5 cm</li><li><strong>T3:</strong> &gt;5 cm</li>
+<li><strong>T4:</strong> invade parede torácica (a), pele com edema/ulceração (b), ambos (c) ou <strong>carcinoma inflamatório (d)</strong></li></ul></div>
+<div class="card"><h4>N e M</h4><ul class="clean small" style="margin-bottom:0">
+<li><strong>N0:</strong> sem linfonodos</li><li><strong>N1:</strong> axilares níveis I–II móveis</li><li><strong>N2:</strong> axilares fixos/confluentes ou mamária interna</li><li><strong>N3:</strong> infraclavicular, supraclavicular ou N2 + mamária interna</li>
+<li><strong>M1:</strong> metástase à distância (osso, pulmão, fígado, cérebro)</li></ul></div></div>
+<p><strong>Estádios anatômicos clínicos (resumo):</strong> 0 (Tis) · I (T1N0) · II (T2N0, T1–2N1, T3N0) · III (T3N1–2, T4, N2–3) · IV (M1). A 8ª edição do AJCC incorpora grau, RE/RP e HER2 ao “estadiamento prognóstico”. <span class="tag t-dir">AJCC 8ª ed.</span> <span class="tag t-inf">Inferência didática</span> (síntese; consulte a tabela completa)</p>
+<ul class="clean"><li><strong>Estadiamento sistêmico:</strong> geralmente <em>não</em> necessário em estádios I–IIA assintomáticos; indicado em doença localmente avançada, N positivo e sintomas — tomografia de tórax/abdome ± cintilografia óssea (ou PET-TC).</li></ul></div></details>
+
+<details class="acc layer-3" open><summary>3.6 Tratamento do câncer de mama: raciocínio por etapas</summary><div class="acc-body">
+<ol class="steps">
+<li><strong>Doença local (mama):</strong> cirurgia conservadora (setorectomia/quadrantectomia) <strong>+ radioterapia</strong> tem sobrevida equivalente à mastectomia em estádios iniciais. <strong>Contraindicações à conservadora:</strong> multicentricidade, microcalcificações difusas suspeitas, relação tumor/mama desfavorável, margens persistentemente positivas, impossibilidade de radioterapia (p.ex., gestação — 1º/2º trimestre —, colagenose grave), preferência da paciente. Reconstrução (imediata ou tardia) é direito garantido por lei. <span class="tag t-evi">Evidência científica</span></li>
+<li><strong>Axila:</strong> <strong>axila clinicamente negativa (cN0)</strong> → biópsia do <strong>linfonodo sentinela</strong>; se negativo, não se esvazia. Sentinela positivo: em cirurgia conservadora + RT com T1–2 e 1–2 sentinelas positivos, <strong>dispensa-se o esvaziamento</strong> (estudo ACOSOG Z0011); sentinela positivo com critérios desfavoráveis ou mastectomia sem RT → esvaziamento ou RT axilar conforme equipe. <strong>Axila clinicamente positiva</strong> → esvaziamento ou, após neoadjuvância, reavaliação/técnica de sentinela direcionada. Complicação do esvaziamento: <strong>linfedema</strong>, parestesias, limitação do ombro. <span class="tag t-evi">Evidência científica</span></li>
+<li><strong>Tratamento sistêmico por subtipo:</strong> Luminal → <strong>hormonioterapia</strong> por 5–10 anos (tamoxifeno em pré-menopausa; <strong>inibidor de aromatase</strong> na pós-menopausa — em pré-menopausa só com supressão ovariana); quimioterapia conforme risco clínico-patológico/assinatura genômica. HER2+ → quimioterapia + <strong>anti-HER2</strong> (trastuzumabe ± pertuzumabe, por 1 ano). Triplo-negativo → quimioterapia (antracíclico + taxano; platina em casos selecionados) ± imunoterapia em estádios II–III de maior risco; portadoras de BRCA de alto risco podem receber PARP. <span class="tag t-inf">Inferência didática</span> (síntese)</li>
+<li><strong>Neoadjuvância</strong> (sistêmico antes da cirurgia): indicada em <strong>triplo-negativo e HER2+</strong> ≥T2 ou N+, e em tumores localmente avançados/inflamatórios, para <em>viabilizar a conservadora</em> e <strong>testar a resposta</strong> (resposta patológica completa tem valor prognóstico e guia a terapia pós-operatória).</li>
+<li><strong>Radioterapia adjuvante:</strong> obrigatória após cirurgia conservadora; após mastectomia quando há T3–T4, linfonodos positivos (≥4 certo; 1–3 individualizado) ou margens comprometidas.</li>
+<li><strong>Doença metastática:</strong> tratamento sistêmico paliativo/prolongador (endócrino + inibidor de <strong>CDK4/6</strong> nos luminais; anti-HER2; quimioterapia; imunoterapia/ADCs em subgrupos), com cuidados de suporte e paliativos desde o início.</li>
+<li><strong>CDIS:</strong> cirurgia (conservadora + RT, ou mastectomia) ± hormonioterapia se RE+; <strong>sem esvaziamento axilar</strong> (sentinela apenas se mastectomia ou lesão extensa/suspeita de invasão). <strong>CLIS:</strong> em geral observação e redução de risco.</li>
+<li><strong>Seguimento:</strong> consultas a cada 3–6 meses nos primeiros 2–3 anos, depois semestral/anual; <strong>mamografia anual</strong>; <strong>sem marcadores tumorais nem exames de estadiamento de rotina</strong> em assintomáticas; orientar atividade física, peso e saúde óssea (inibidores de aromatase), sexual e emocional.</li>
+</ol>
+<div class="callout"><p style="margin-bottom:0"><strong>Equipe e acesso:</strong> o tratamento é multidisciplinar (mastologia, oncologia clínica, radioterapia, patologia, radiologia, reabilitação, psicologia, genética). A legislação brasileira prevê início do tratamento oncológico em até 60 dias do diagnóstico e exames para diagnóstico em até 30 dias após suspeita; reconstrução mamária pelo SUS é direito (conferir textos e numeração das leis). <span class="tag t-inf">Inferência didática</span></p></div>
+</div></details>
+
+<details class="acc layer-3" open><summary>3.7 Rastreamento: o que as recomendações dizem</summary><div class="acc-body">
+<div class="callout warn"><h4>Atenção: esta é uma área de mudança recente</h4>
+<p style="margin-bottom:0">Em <strong>setembro de 2025</strong> o Ministério da Saúde divulgou nova orientação ampliando o acesso à mamografia pelo SUS. Não consegui abrir o documento oficial; o que segue vem de reportagens e de nota técnica municipal que o citam. <strong>Conferir texto e portaria oficiais antes de usar em prova ou prática.</strong> <span class="tag t-contro">Controvérsia / conferir</span></p></div>
+<div class="tblwrap"><table><caption>Rastreamento mamográfico em mulheres de risco habitual — comparação das fontes.</caption>
+<thead><tr><th>Fonte</th><th>Faixa etária e periodicidade</th></tr></thead><tbody>
+<tr><td><strong>Ministério da Saúde/INCA (diretriz de 2015)</strong> <span class="tag t-aula">Padrão histórico de prova</span></td><td>Mamografia <strong>bienal de 50 a 69 anos</strong>; 40–49 anos sem recomendação de rotina (decisão compartilhada). Exame clínico e autoexame <strong>não recomendados</strong> como estratégia de rastreamento isolada.</td></tr>
+<tr><td><strong>Ministério da Saúde (set/2025, conforme reportagem)</strong> <span class="tag t-dir">Diretriz atual</span></td><td>Acesso à mamografia <strong>a partir dos 40 anos</strong> (40–49: por solicitação médica ou iniciativa da própria mulher, <em>sem obrigatoriedade</em> de rastreamento periódico); rastreamento organizado ampliado até <strong>74 anos</strong>; &gt;74 anos conforme saúde e expectativa de vida. Periodicidade não detalhada na fonte lida.</td></tr>
+<tr><td><strong>Nota técnica SMS-SP 03/2025</strong> (cita a orientação de setembro/2025)</td><td>Mulheres a partir dos <strong>40 anos, mamografia anual até 75 anos</strong>; parente de 1º grau com câncer de mama/ovário → mamografia antes dos 40 por orientação especializada.</td></tr>
+<tr><td><strong>Sociedades brasileiras (SBM, CBR, FEBRASGO)</strong></td><td>Mamografia <strong>anual de 40 a 74 anos</strong>; ≥75 individualizado. <span class="tag t-inf">Inferência didática</span> (texto de recomendação conjunta não reaberto)</td></tr>
+<tr><td><strong>USPSTF (EUA, 2024)</strong></td><td>Mamografia <strong>bienal de 40 a 74 anos</strong>.</td></tr>
+</tbody></table></div>
+<ul class="clean">
+<li><strong>Alto risco</strong> (BRCA1/2 ou outras variantes patogênicas, parente de 1º grau portador, RT torácica antes dos 30 anos, risco vitalício ≥20–25% por modelos como Tyrer-Cuzick): iniciar mais cedo (≈30 anos ou 10 anos antes do caso familiar mais jovem), <strong>mamografia anual + RM anual</strong>, com aconselhamento genético. <span class="tag t-inf">Inferência didática</span> (idades variam por diretriz)</li>
+<li><strong>Benefícios e danos:</strong> redução de mortalidade vs. falso-positivos, biópsias desnecessárias, sobrediagnóstico (principalmente CDIS de baixo grau) e ansiedade — por isso a <strong>decisão compartilhada</strong> é central, sobretudo na faixa 40–49.</li>
+<li><strong>Autoexame:</strong> não substitui rastreamento; a estratégia recomendada é <em>conscientização</em> (conhecer as próprias mamas e procurar atendimento diante de alteração), além de exame clínico na consulta.</li>
+</ul></div></details>
+
+<details class="acc layer-3" open><summary>3.8 Comunicação, ética e cuidado respeitoso</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>Exame das mamas:</strong> explicar o que será feito, pedir consentimento, garantir privacidade, oferecer acompanhante, respeitar identidades e contextos culturais (inclusive mulheres trans e homens trans).</li>
+<li><strong>Comunicar resultado alterado:</strong> espaço e tempo; perguntar o quanto ela quer saber; “<em>o resultado mostra uma alteração que precisa de investigação</em>” (BI-RADS 4/5) ≠ “<em>você tem câncer</em>”; usar frequências absolutas; combinar próximo passo concreto e prazo. <strong>Más notícias</strong> (protocolo SPIKES: ambiente, percepção, convite, conhecimento, emoções, estratégia e resumo).</li>
+<li><strong>Decisão compartilhada:</strong> conservadora × mastectomia, reconstrução, rastreamento aos 40–49 anos, cirurgia redutora de risco. Registrar a decisão.</li>
+<li><strong>Segurança:</strong> acompanhar resultado de exame até o fim (rastreamento positivo sem seguimento é falha de sistema); nunca tranquilizar “por imagem normal” diante de nódulo suspeito.</li>
+<li><strong>Violência e vulnerabilidade:</strong> mastectomia e imagem corporal impactam sexualidade e saúde mental; oferecer apoio psicossocial.</li>
+</ul></div></details>
+
+<h3 style="margin-top:20px">Camada 4 — Refinamento e atualizações</h3>
+
+<details class="acc layer-4"><summary>4.1 Controvérsias, novidades e limites de evidência</summary><div class="acc-body">
+<ul class="clean">
+<li><strong>Quando começar o rastreamento (40 × 50 anos) e com que periodicidade (anual × bienal):</strong> as sociedades, o Ministério da Saúde e a USPSTF diferem; a divergência reflete custo/acesso, balanço benefício-dano e peso dado à mortalidade em mulheres 40–49 anos. <span class="tag t-contro">Controvérsia</span></li>
+<li><strong>Sobrediagnóstico de CDIS de baixo grau:</strong> há estudos de observação ativa; fora de protocolo, continua-se tratando.</li>
+<li><strong>Assinaturas genômicas</strong> (p.ex., Oncotype DX 21 genes) ajudam a decidir quimioterapia em luminal HER2− com linfonodos 0–3; disponibilidade restrita no SUS.</li>
+<li><strong>Imunoterapia no triplo-negativo</strong> (pembrolizumabe + quimioterapia neoadjuvante), <strong>PARP</strong> em BRCA (olaparibe adjuvante), <strong>inibidores de CDK4/6</strong> (palbociclibe, ribociclibe, abemaciclibe) e <strong>conjugados anticorpo-fármaco</strong> (trastuzumabe entansina; trastuzumabe deruxtecana) ampliaram o tratamento. Segundo reportagem de setembro/2025, o Ministério da Saúde anunciou incorporação de CDK4/6 e trastuzumabe entansina ao SUS — <em>confirmar portarias e indicações</em>. <span class="tag t-contro">Conferir</span></li>
+<li><strong>Dessescalonamento:</strong> evitar esvaziamento axilar e radioterapia em perfis selecionados; <strong>omitir radioterapia</strong> em idosas luminal A pequenas; resposta patológica completa orienta intensificação/de-escalonamento.</li>
+<li><strong>Tomossíntese e IA</strong> aumentam detecção; benefício em mortalidade ainda em estudo; disponibilidade limitada no SUS.</li>
+<li><strong>Pontos não verificados no texto integral:</strong> doses, esquemas, e algoritmos detalhados de quimioterapia/hormonioterapia; guias internacionais atuais (NCCN/ESMO/St. Gallen 2025) — consulte as fontes primárias antes de uso fora de estudo.</li>
+</ul></div></details>
+</section>
+<section class="mod" id="m8" aria-labelledby="m8h">
+  <div class="mod-head"><span class="mod-num">M8</span><h2 id="m8h">Tabelas comparativas</h2><p class="mod-sub">Para discriminar o que a prova costuma confundir.</p></div>
+  <div class="tblwrap"><table><caption>Lesões benignas sólidas e císticas: como diferenciar.</caption>
+  <thead><tr><th>Lesão</th><th>Quem</th><th>Clínica</th><th>Imagem</th><th>Conduta</th></tr></thead><tbody>
+  <tr><td><strong>Fibroadenoma</strong></td><td>20–35 anos</td><td>Nódulo móvel, indolor, borrachoso, bem delimitado</td><td>US: oval, paralelo à pele, circunscrito, hipoecoico</td><td>Seguimento se típico e concordante; exérese se &gt;3 cm, crescimento, dúvida</td></tr>
+  <tr><td><strong>Tumor filoides</strong></td><td>~40–50 anos</td><td>Crescimento rápido, volumoso</td><td>Semelhante ao fibroadenoma, às vezes cistos internos</td><td>Exérese ampla (margem ≥1 cm); sem esvaziamento axilar</td></tr>
+  <tr><td><strong>Cisto simples</strong></td><td>35–50 anos</td><td>Nódulo que varia com ciclo, pode doer</td><td>US: anecoico, parede fina, reforço posterior (BI-RADS 2)</td><td>Observar; punção se sintomático</td></tr>
+  <tr><td><strong>Papiloma intraductal</strong></td><td>35–55 anos</td><td>Derrame uniductal sanguinolento/cristalino</td><td>Pequeno nódulo retroareolar intraductal</td><td>Ressecção do ducto</td></tr>
+  <tr><td><strong>Necrose gordurosa</strong></td><td>Pós-trauma/cirurgia/RT</td><td>Nódulo duro, às vezes retração</td><td>Cisto oleoso, calcificação em casca de ovo; pode simular câncer</td><td>Biópsia; seguimento</td></tr>
+  <tr><td><strong>Carcinoma invasivo</strong></td><td>↑ com idade</td><td>Nódulo duro, irregular, fixo; retração; linfonodo axilar</td><td>Espiculado, “mais alto que largo”, sombra acústica</td><td>Core biopsy → estadiamento → tratamento</td></tr>
+  </tbody></table></div>
+
+  <div class="tblwrap"><table><caption>Mastite lactacional × abscesso × carcinoma inflamatório × Paget.</caption>
+  <thead><tr><th>Quadro</th><th>Pistas</th><th>Conduta</th></tr></thead><tbody>
+  <tr><td><strong>Mastite lactacional</strong></td><td>Puérpera, febre, área dolorosa, eritematosa, quente</td><td>Manter esvaziamento, analgesia, antibiótico anti-estafilocócico se persistir &gt;24 h</td></tr>
+  <tr><td><strong>Abscesso</strong></td><td>Coleção flutuante, febre persistente</td><td>US + punção/drenagem + antibiótico</td></tr>
+  <tr><td><strong>Carcinoma inflamatório</strong></td><td>Não lactante ou sem resposta ao antibiótico, “casca de laranja”, ≥1/3 da mama, rápido</td><td>Biópsia de pele/tumor; neoadjuvância</td></tr>
+  <tr><td><strong>Paget</strong></td><td>Eczema unilateral do mamilo que não cicatriza</td><td>Biópsia do mamilo + imagem</td></tr>
+  </tbody></table></div>
+
+  <div class="tblwrap"><table><caption>CDIS × carcinoma invasivo × CLIS.</caption>
+  <thead><tr><th></th><th>CDIS</th><th>Invasivo (NST)</th><th>CLIS/NLIS</th></tr></thead><tbody>
+  <tr><td>Achado típico</td><td>Microcalcificações agrupadas</td><td>Nódulo espiculado</td><td>Achado incidental em biópsia</td></tr>
+  <tr><td>Linfonodo comprometido</td><td>Praticamente não</td><td>Sim, risco proporcional ao tamanho</td><td>Não</td></tr>
+  <tr><td>Natureza</td><td>Precursor direto (pode progredir)</td><td>Câncer</td><td>Marcador de risco bilateral</td></tr>
+  <tr><td>Conduta</td><td>Cirurgia (± RT) ± hormonioterapia; sem esvaziamento axilar</td><td>Cirurgia + axila + terapia sistêmica/RT</td><td>Observação, redução de risco</td></tr>
+  </tbody></table></div>
+</section>
+
+<section class="mod" id="m9" aria-labelledby="m9h">
+  <div class="mod-head"><span class="mod-num">M9</span><h2 id="m9h">Algoritmos de decisão</h2><p class="mod-sub">Três fluxos para decorar em forma de raciocínio, não de lista.</p></div>
+
+  <h3>Algoritmo A — Nódulo palpável</h3>
+  <div class="flow" role="group" aria-label="Algoritmo do nódulo palpável">
+    <div class="fbox start">Nódulo palpável + exame clínico completo (mamas e axilas)</div>
+    <div class="farrow" aria-hidden="true">↓</div>
+    <div class="fsplit">
+      <div class="fbox dec"><strong>&lt;30–35 anos</strong><br>Ultrassonografia primeiro</div>
+      <div class="fbox dec"><strong>≥35–40 anos</strong><br>Mamografia + ultrassonografia</div>
+    </div>
+    <div class="farrow" aria-hidden="true">↓</div>
+    <div class="fsplit">
+      <div class="fbox">Cisto simples → observar / punção se sintomático</div>
+      <div class="fbox">Sólido típico benigno (BI-RADS 2–3) e clínica concordante → seguimento</div>
+      <div class="fbox alert">BI-RADS 4–5 <em>ou</em> clínica suspeita <em>ou</em> discordância → <strong>core biopsy</strong></div>
+    </div>
+    <div class="farrow" aria-hidden="true">↓</div>
+    <div class="fbox end">Resultado discordante (clínica suspeita, biópsia benigna) → repetir/ exérese. <strong>Nunca tranquilizar apenas pela imagem.</strong></div>
+  </div>
+
+  <h3>Algoritmo B — Descarga papilar</h3>
+  <div class="flow" role="group" aria-label="Algoritmo da descarga papilar">
+    <div class="fbox start">Descarga papilar</div>
+    <div class="farrow" aria-hidden="true">↓</div>
+    <div class="fsplit">
+      <div class="fbox dec"><strong>Bilateral, multiductal, provocada, láctea/colorida</strong><br>Prolactina, TSH, βhCG, revisar fármacos</div>
+      <div class="fbox alert"><strong>Unilateral, uniductal, espontânea, sanguinolenta/cristalina</strong><br>Mamografia + US (± RM/ductografia)</div>
+    </div>
+    <div class="farrow" aria-hidden="true">↓</div>
+    <div class="fsplit">
+      <div class="fbox end">Tranquilizar; tratar causa (hiperprolactinemia, hipotireoidismo, fármaco)</div>
+      <div class="fbox end">Excisão do ducto (papiloma é o mais comum; afastar carcinoma)</div>
+    </div>
+  </div>
+
+  <h3>Algoritmo C — Do achado ao tratamento (câncer confirmado)</h3>
+  <div class="flow" role="group" aria-label="Algoritmo do câncer de mama confirmado">
+    <div class="fbox start">Core biopsy positiva → IHQ (RE, RP, HER2, Ki-67) + estadiamento clínico</div>
+    <div class="farrow" aria-hidden="true">↓</div>
+    <div class="fsplit">
+      <div class="fbox dec"><strong>Operável (I–IIA, cN0)</strong><br>Cirurgia primeiro; sentinela; terapia adjuvante conforme subtipo</div>
+      <div class="fbox dec"><strong>Triplo-negativo ou HER2+ ≥T2/N+; localmente avançado/inflamatório</strong><br>Neoadjuvância → cirurgia</div>
+      <div class="fbox alert"><strong>M1</strong><br>Tratamento sistêmico paliativo + suporte</div>
+    </div>
+    <div class="farrow" aria-hidden="true">↓</div>
+    <div class="fbox end">RT (se conservadora ou critérios) · hormonioterapia (RE+) · anti-HER2 (HER2+) · seguimento com mamografia anual</div>
+  </div>
+</section>
+
+<section class="mod" id="m10" aria-labelledby="m10h">
+  <div class="mod-head"><span class="mod-num">M10</span><h2 id="m10h">Figuras e esquemas</h2><p class="mod-sub">Um esquema por ideia.</p></div>
+  <figure>
+    <svg viewBox="0 0 640 230" role="img" aria-labelledby="fig2t fig2d" style="width:100%;height:auto;max-width:700px">
+      <title id="fig2t">Figura 2 — BI-RADS e conduta</title>
+      <desc id="fig2d">Linha com as categorias 0 a 6 do BI-RADS e a conduta correspondente: complementar, rotina, seguimento curto, biópsia e tratamento.</desc>
+      <g font-family="sans-serif" font-size="12">
+        <rect x="8" y="30" width="86" height="60" rx="8" fill="var(--gold-soft)" stroke="var(--gold)"/><text class="svg-lbl" x="51" y="55" text-anchor="middle" font-weight="700">BI-RADS 0</text><text class="svg-lbl-s" x="51" y="75" text-anchor="middle" font-size="10">complementar</text>
+        <rect x="102" y="30" width="86" height="60" rx="8" fill="var(--green-soft)" stroke="var(--green)"/><text class="svg-lbl" x="145" y="55" text-anchor="middle" font-weight="700">1 e 2</text><text class="svg-lbl-s" x="145" y="75" text-anchor="middle" font-size="10">rotina</text>
+        <rect x="196" y="30" width="86" height="60" rx="8" fill="var(--blue-soft)" stroke="var(--blue)"/><text class="svg-lbl" x="239" y="55" text-anchor="middle" font-weight="700">3 (≤2%)</text><text class="svg-lbl-s" x="239" y="75" text-anchor="middle" font-size="10">6–12–24 meses</text>
+        <rect x="290" y="30" width="110" height="60" rx="8" fill="var(--red-soft)" stroke="var(--red)"/><text class="svg-lbl" x="345" y="55" text-anchor="middle" font-weight="700">4A · 4B · 4C</text><text class="svg-lbl-s" x="345" y="75" text-anchor="middle" font-size="10">biópsia</text>
+        <rect x="408" y="30" width="86" height="60" rx="8" fill="var(--red-soft)" stroke="var(--red)"/><text class="svg-lbl" x="451" y="55" text-anchor="middle" font-weight="700">5 (≥95%)</text><text class="svg-lbl-s" x="451" y="75" text-anchor="middle" font-size="10">biópsia + plano</text>
+        <rect x="502" y="30" width="86" height="60" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"/><text class="svg-lbl" x="545" y="55" text-anchor="middle" font-weight="700">6</text><text class="svg-lbl-s" x="545" y="75" text-anchor="middle" font-size="10">câncer provado</text>
+        <text class="svg-lbl-s" x="8" y="130" font-size="12">Probabilidade de malignidade cresce da esquerda para a direita; só 4–6 levam à biópsia ou ao tratamento direto.</text>
+        <text class="svg-lbl-s" x="8" y="160" font-size="12">Pegadinha: BI-RADS 0 não é normal; BI-RADS 3 não é alta; BI-RADS 6 não é “biopsiar de novo”.</text>
+      </g>
+    </svg>
+    <figcaption class="small muted">Figura 2 — Mapa BI-RADS. Síntese didática a partir do sistema ACR.</figcaption>
+  </figure>
+</section>
+
+<section class="mod" id="m11" aria-labelledby="m11h">
+  <div class="mod-head"><span class="mod-num">M11</span><h2 id="m11h">Raciocínio clínico em cinco perguntas</h2><p class="mod-sub">Use sempre a mesma sequência diante de uma queixa mamária.</p></div>
+  <ol class="steps">
+    <li><strong>É uma emergência ou sinal de alarme?</strong> Infecção com sepse, carcinoma inflamatório, ulceração, linfonodo fixo, metástase sintomática.</li>
+    <li><strong>Qual a idade e o risco basal?</strong> Idade define o primeiro exame (US × mamografia) e a pré-probabilidade de câncer; risco familiar/genético muda tudo.</li>
+    <li><strong>Clínica e imagem concordam?</strong> Triplo teste: clínica + imagem + patologia. Se um é suspeito, a conduta é suspeita.</li>
+    <li><strong>O que muda a conduta?</strong> BI-RADS, resultado de biópsia, subtipo e estádio.</li>
+    <li><strong>Como comunicar e decidir junto?</strong> Linguagem clara, prazos, apoio psicossocial, decisões compartilhadas.</li>
+  </ol>
+  <div class="callout blue"><h4>Exemplo mental</h4><p style="margin-bottom:0">Mulher de 28 anos, nódulo móvel de 2 cm. Pergunta 2 → US primeiro. Pergunta 3 → se for fibroadenoma típico, BI-RADS 2–3 e clínica compatível, seguimento. Se o nódulo cresce em 6 meses, pergunta 4 muda: biópsia/exérese.</p></div>
+</section>
+
+<section class="mod" id="m12" aria-labelledby="m12h">
+  <div class="mod-head"><span class="mod-num">M12</span><h2 id="m12h">Casos clínicos progressivos</h2><p class="mod-sub">Cinco casos com decisões em etapas. Responda antes de ver o comentário.</p></div>
+  <div id="casesHost"></div>
+</section>
+
+<section class="mod" id="m13" aria-labelledby="m13h">
+  <div class="mod-head"><span class="mod-num">M13</span><h2 id="m13h">Questões comentadas</h2><p class="mod-sub">Tente antes de ver o gabarito. Informe sua confiança: ela revela excesso de confiança e lacunas.</p></div>
+  <div class="toolbar">
+    <label class="small" for="qTopic">Tema</label>
+    <select id="qTopic" class="btn sm"></select>
+    <label class="small" for="qDiff">Nível</label>
+    <select id="qDiff" class="btn sm"><option value="">Todos</option><option value="1">Básico</option><option value="2">Intermediário</option><option value="3">Avançado</option></select>
+    <button class="btn sm" id="qStart">Montar sequência</button>
+    <button class="btn sm" id="qErrOnly">Só os que errei</button>
+    <button class="btn sm" id="qResetAll">Zerar questões</button>
+  </div>
+  <div class="grid g4" id="qKpi" aria-live="polite"></div>
+  <div id="quizHost"></div>
+</section>
+
+<section class="mod" id="m14" aria-labelledby="m14h">
+  <div class="mod-head"><span class="mod-num">M14</span><h2 id="m14h">Flashcards com repetição espaçada</h2><p class="mod-sub">Intervalos 0–1–3–7–14–30–60 dias. Tente lembrar antes de virar.</p></div>
+  <div class="toolbar">
+    <label class="small" for="fcFilter">Mostrar</label>
+    <select id="fcFilter" class="btn sm"><option value="due">Devidos hoje</option><option value="new">Novos</option><option value="all">Todos</option></select>
+    <button class="btn sm" id="fcCsv">Exportar CSV (Anki)</button>
+    <span class="small muted" id="fcInfo" aria-live="polite"></span>
+  </div>
+  <div id="fcStage"></div>
+</section>
+
+<section class="mod" id="m15" aria-labelledby="m15h">
+  <div class="mod-head"><span class="mod-num">M15</span><h2 id="m15h">Mapa mental</h2><p class="mod-sub">Expandir e recolher ramos; use a busca para destacar.</p></div>
+  <div class="toolbar">
+    <button class="btn sm" id="mmExpand">Expandir tudo</button>
+    <button class="btn sm" id="mmCollapse">Recolher</button>
+    <label class="small" for="mmSearch">Destacar</label>
+    <input class="btn sm" id="mmSearch" type="search" placeholder="ex.: BRCA" style="min-width:140px">
+  </div>
+  <div class="mm" id="mmHost"></div>
+</section>
+
+<section class="mod" id="m16" aria-labelledby="m16h">
+  <div class="mod-head"><span class="mod-num">M16</span><h2 id="m16h">Revisão espaçada e checklist</h2><p class="mod-sub">D0, D1, D3, D7, D14, D30 e D60 a partir da data de estudo.</p></div>
+  <div class="toolbar"><label class="small" for="studyDate">Data do estudo (D0)</label><input class="btn sm" type="date" id="studyDate" value="2026-10-16"></div>
+  <div class="tblwrap"><table><thead><tr><th>Dia</th><th>Data</th><th>Tarefa</th></tr></thead><tbody id="reviewCal"></tbody></table></div>
+  <p class="small muted">A AV Somativa (12 ou 13/11/2026) inclui mama: se D14 e D30 caírem perto dela, antecipe e use erros e flashcards devidos como prioridade.</p>
+  <h3>Checklist de domínio</h3>
+  <div id="chkHost"></div>
+</section>
+
+<section class="mod" id="m17" aria-labelledby="m17h">
+  <div class="mod-head"><span class="mod-num">M17</span><h2 id="m17h">Erros comuns e pegadinhas</h2></div>
+  <ul class="clean">
+    <li><strong>“Mamografia normal, logo sem câncer.”</strong> Nódulo palpável suspeito com imagem negativa continua exigindo biópsia.</li>
+    <li><strong>BI-RADS 0 = normal.</strong> Não: é inconclusivo; complementar.</li>
+    <li><strong>BI-RADS 3 sem seguimento.</strong> Exige controle aos 6, 12 e 24 meses.</li>
+    <li><strong>PAAF para estudar tumor sólido suspeito.</strong> Prefira core biopsy (histologia + IHQ).</li>
+    <li><strong>Esvaziamento axilar para CDIS ou tumor filoides.</strong> Não é rotina.</li>
+    <li><strong>Mastite “que não melhora” só com antibiótico.</strong> Pensar em abscesso e em carcinoma inflamatório (biópsia).</li>
+    <li><strong>Interromper a amamentação na mastite.</strong> Não; manter o esvaziamento.</li>
+    <li><strong>Confundir descarga fisiológica com patológica.</strong> Uniductal, espontânea e sanguinolenta é a que se investiga e se opera.</li>
+    <li><strong>Trastuzumabe/hormonioterapia na gestação.</strong> Contraindicados.</li>
+    <li><strong>Ignorar a divergência de rastreamento.</strong> Cite a fonte (MS 2015, MS 2025, sociedades, USPSTF) e a idade.</li>
+  </ul>
+</section>
+
+<section class="mod" id="m18" aria-labelledby="m18h">
+  <div class="mod-head"><span class="mod-num">M18</span><h2 id="m18h">Glossário</h2></div>
+  <div class="toolbar"><label class="small" for="glSearch">Buscar</label><input class="btn sm" id="glSearch" type="search" placeholder="termo ou sigla" style="min-width:180px"></div>
+  <div id="glHost"></div>
+</section>
+
+<section class="mod" id="m19" aria-labelledby="m19h">
+  <div class="mod-head"><span class="mod-num">M19</span><h2 id="m19h">Síntese final de uma página</h2></div>
+  <div class="card">
+    <ul class="clean">
+      <li><strong>Queixa:</strong> nódulo (20%), derrame (5%), dor (&lt;1%) → risco de câncer crescente.</li>
+      <li><strong>Primeiro exame:</strong> &lt;30–35 anos US; ≥35–40 anos mamografia + US.</li>
+      <li><strong>BI-RADS:</strong> 0 complementar · 1–2 rotina · 3 seguimento curto · 4–5 biópsia · 6 tratar.</li>
+      <li><strong>Biópsia:</strong> core (histologia + IHQ) é padrão; PAAF para cisto/linfonodo; negativa discordante não exclui.</li>
+      <li><strong>Benignos:</strong> fibroadenoma (jovem, móvel) · filoides (cresce rápido) · cisto · papiloma (derrame uniductal).</li>
+      <li><strong>Risco:</strong> idade, familiar, BRCA, hormônio, atipia; alto risco = mamografia + RM, aconselhamento.</li>
+      <li><strong>Subtipos:</strong> Luminal (hormonioterapia) · HER2 (anti-HER2) · triplo-negativo (quimio ± imuno).</li>
+      <li><strong>Cirurgia:</strong> conservadora + RT ≈ mastectomia; axila cN0 → sentinela.</li>
+      <li><strong>Especiais:</strong> Paget (biópsia do mamilo) · inflamatório T4d · gestação (sem anti-HER2/hormônio).</li>
+      <li><strong>Rastreamento:</strong> fontes divergem (40 × 50 anos; anual × bienal) — conferir norma vigente.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="mod" id="m20" aria-labelledby="m20h">
+  <div class="mod-head"><span class="mod-num">M20</span><h2 id="m20h">Painel de progresso e caderno de erros</h2></div>
+  <div id="panel"></div>
+  <h3>Caderno de erros</h3>
+  <div class="toolbar"><button class="btn sm" id="btnErrCsv">Exportar erros (CSV)</button><button class="btn sm" id="btnErrClear">Limpar caderno</button></div>
+  <div id="errHost"></div>
+</section>
+
+<section class="mod" id="m21" aria-labelledby="m21h">
+  <div class="mod-head"><span class="mod-num">M21</span><h2 id="m21h">Fontes, auditoria e histórico</h2></div>
+  <div class="callout warn"><h4>Auditoria honesta desta aula</h4>
+    <ul class="clean" style="margin-bottom:0">
+      <li>Esta aula foi gerada automaticamente em 15/10/2026 para a aula presencial de 16/10/2026.</li>
+      <li><strong>Não foram encontrados os slides da professora para 2026.</strong> O conteúdo se baseia no cronograma do Guia SM2 2026.2, no material de Patologia da mama (2025) lido no Drive e em síntese didática de conhecimento consolidado.</li>
+      <li><strong>Não foi possível abrir a página oficial do Ministério da Saúde</strong> (acesso restrito); as informações de setembro/2025 vêm de fontes secundárias. Conferir.</li>
+      <li>Doses, esquemas quimioterápicos e valores percentuais são ordens de grandeza didáticas; confirme em diretriz primária antes de uso clínico.</li>
+      <li>Itens marcados como <span class="tag t-inf">Inferência didática</span> ou <span class="tag t-contro">Controvérsia</span> merecem conferência com o professor.</li>
+    </ul></div>
+  <h3>Referências para conferência</h3>
+  <ul class="clean small">
+    <li>Guia de Orientações — Saúde da Mulher II, 2026.2 (cronograma teórico).</li>
+    <li>Patologia da mama 2025 (material da disciplina, Drive).</li>
+    <li>INCA. Estimativa 2026–2028: incidência de câncer no Brasil.</li>
+    <li>Ministério da Saúde. Diretrizes para a detecção precoce do câncer de mama no Brasil (2015) e atualização de setembro/2025 (não aberta diretamente).</li>
+    <li>ACR BI-RADS Atlas; AJCC 8ª edição; consenso de St. Gallen; USPSTF 2024.</li>
+    <li>FEBRASGO/SBM/CBR: recomendações de rastreamento.</li>
+  </ul>
+  <h3>Histórico de versões</h3>
+  <ul class="clean small"><li><strong>1.0 — 15/10/2026:</strong> criação automática (rotina de quinta-feira, 20 h).</li></ul>
+</section>
+
+<footer class="small muted" style="text-align:center;margin:30px 0">Material de estudo. Não substitui diretrizes oficiais, professores nem julgamento clínico.</footer>
+</main>
+
+<script>
+var APP_KEY = "sm2_mama_v1";
+var OBJETIVOS = [
+ {id:"O1",t:"Realizar anamnese e exame clínico dirigidos e interpretar o risco de malignidade de cada queixa mamária.",topics:["queixa"]},
+ {id:"O2",t:"Escolher o exame de imagem adequado por idade e risco e aplicar o BI-RADS.",topics:["imagem"]},
+ {id:"O3",t:"Escolher o tipo de biópsia e integrar clínica, imagem e patologia (tripla avaliação).",topics:["biopsia"]},
+ {id:"O4",t:"Diferenciar lesões benignas (fibroadenoma, filoides, cistos, papiloma, mastite) e conduzir cada uma.",topics:["benign"]},
+ {id:"O5",t:"Identificar fatores de risco, sinais de síndrome hereditária e estratégias para alto risco.",topics:["risco"]},
+ {id:"O6",t:"Classificar o câncer de mama: in situ × invasivo, subtipos por IHQ e TNM.",topics:["subtipo","estad"]},
+ {id:"O7",t:"Planejar o tratamento por etapas e reconhecer situações especiais (Paget, inflamatório, gestação).",topics:["trat","especiais"]},
+ {id:"O8",t:"Comparar as recomendações de rastreamento e comunicar resultados e decisões com segurança.",topics:["rastr","comun"]}
+];
+var TOPIC_LABEL = {queixa:"Queixa e exame clínico",imagem:"Imagem e BI-RADS",biopsia:"Biópsia e tripla avaliação",benign:"Lesões benignas",risco:"Risco e genética",subtipo:"In situ, invasivo e subtipos",estad:"Estadiamento",trat:"Tratamento",especiais:"Situações especiais",rastr:"Rastreamento",comun:"Comunicação e ética"};
+var DIAG = [
+ {q:"Qual queixa mamária isolada tem, em geral, o maior risco de malignidade?",o:["Mastalgia cíclica","Descarga papilar bilateral multiductal","Massa palpável","Ingurgitamento pré-menstrual"],a:2,e:"Massa palpável (~20%) > descarga (~5%) > dor (≤1%).",obj:"O1"},
+ {q:"Uma mulher de 25 anos com nódulo mamário palpável deve fazer primeiro:",o:["Mamografia","Ultrassonografia","Ressonância","Cintilografia"],a:1,e:"Mama jovem é densa; a ultrassonografia é o primeiro exame.",obj:"O2"},
+ {q:"Qual categoria BI-RADS exige biópsia?",o:["2","3","0","4"],a:3,e:"BI-RADS 4 e 5 levam à biópsia. O 0 pede complementação e o 3, seguimento curto.",obj:"O2"},
+ {q:"Qual receptor define o tratamento com anti-HER2?",o:["Superexpressão de HER2","RE positivo","RP positivo","Ki-67 alto"],a:0,e:"Trastuzumabe e correlatos agem em tumores HER2 positivos.",obj:"O6"},
+ {q:"O linfonodo sentinela é indicado quando a axila é:",o:["Clinicamente positiva e fixa","Clinicamente negativa","Sempre, em CDIS puro","Nunca"],a:1,e:"Sentinela é a técnica para cN0.",obj:"O7"}
+];
+
+var QUESTOES = [];
+function Q(id,topic,diff,stem,opts,ans,why,tip){QUESTOES.push({id:id,topic:topic,diff:diff,stem:stem,opts:opts,ans:ans,why:why,tip:tip});}
+Q("q01","queixa",1,"Mulher de 24 anos procura atendimento por nódulo mamário de 2 cm, móvel, indolor, de consistência elástica. Qual o melhor primeiro exame de imagem?",
+["Mamografia bilateral","Ultrassonografia mamária","Ressonância magnética","Punção aspirativa sem imagem","Cintilografia mamária"],1,
+["Em mama jovem e densa a sensibilidade da mamografia é baixa e a radiação é evitável sem ganho.","Correta: é o método de escolha em mulheres jovens para distinguir cisto de sólido e caracterizar o nódulo.","Reservada para alto risco ou problemas específicos; não é primeiro exame.","Sem imagem, não se caracteriza a lesão nem se orienta a punção.","Não faz parte da propedêutica mamária de rotina."],
+"Idade define o primeiro exame: <30–35 anos, US; ≥35–40, mamografia + US.");
+Q("q02","imagem",1,"Mamografia com laudo BI-RADS 3. Qual a conduta mais adequada?",
+["Rastreamento de rotina em 2 anos","Seguimento curto com controle em 6, 12 e 24 meses","Biópsia imediata obrigatória","Mastectomia redutora de risco","Repetir imediatamente com incidências adicionais"],1,
+["Seria conduta de BI-RADS 1–2.","Correta: provavelmente benigno (≤2%) exige controle curto; biópsia se crescer ou mudar.","Indicada em 4 e 5, não de rotina em 3 (salvo desejo da paciente ou contexto).","Desproporcional e sem indicação.","Característica do BI-RADS 0."],
+"BI-RADS 3 não é normal: tem seguimento obrigatório.");
+Q("q03","imagem",1,"O que significa BI-RADS 0?",
+["Exame normal","Achado benigno","Avaliação incompleta: necessita complementar","Altamente suspeito","Câncer comprovado"],2,
+["Normal é a categoria 1.","Benigno é a categoria 2.","Correta: precisa de incidências adicionais, ultrassonografia, RM ou comparação com exames anteriores.","Altamente suspeito é a categoria 5.","Câncer provado é a categoria 6."],
+"Zero = inconclusivo, não normal.");
+Q("q04","imagem",2,"Mamografia de rastreamento mostra microcalcificações pleomórficas finas, agrupadas (BI-RADS 4C), sem nódulo. Qual a melhor abordagem?",
+["Repetir mamografia em 6 meses","Biópsia por agulha grossa/vácuo guiada por estereotaxia","Apenas ultrassonografia anual","PAAF por palpação","Tranquilizar e retornar em 1 ano"],1,
+["Seguimento curto é para BI-RADS 3, e esta lesão é suspeita.","Correta: microcalcificações suspeitas exigem tecido e, em geral, biópsia guiada por estereotaxia (mamotomia), com marcação se indicado.","Ultrassonografia não é o método para microcalcificações.","Lesão não palpável: PAAF não é adequada.","Subestima grave risco; 4C tem probabilidade de malignidade &gt;50%."],
+"Microcalcificações = mamografia/estereotaxia, não ultrassonografia.");
+Q("q05","biopsia",2,"Mulher de 55 anos, nódulo duro de 3 cm, BI-RADS 5. Qual a conduta diagnóstica ideal?",
+["PAAF apenas","Biópsia de fragmento (core) com imunoistoquímica","Seguimento em 6 meses","Mastectomia direta sem biópsia","Cintilografia óssea"],1,
+["A citologia não diferencia in situ de invasivo nem fornece IHQ confiável.","Correta: histologia confirma o diagnóstico e define RE, RP, HER2 e Ki-67 antes do tratamento.","Inadequado para lesão altamente suspeita.","O diagnóstico patológico precede o tratamento definitivo.","Estadiamento vem depois do diagnóstico, e conforme estádio."],
+"Antes de tratar: diagnóstico histológico + IHQ.");
+Q("q06","biopsia",3,"Nódulo palpável duro em mulher de 45 anos. Imagem: BI-RADS 5. Core biopsy: tecido fibroglandular benigno. Qual a melhor conduta?",
+["Considerar o caso resolvido","Seguimento em 12 meses","Reconhecer discordância radiopatológica e repetir a biópsia ou fazer exérese","Iniciar hormonioterapia","Mamografia anual apenas"],2,
+["Resultado benigno discordante pode ser falso-negativo.","Dois exames apontavam para malignidade; o isolado benigno não basta.","Correta: tripla avaliação discordante exige nova amostra ou exérese.","Sem diagnóstico, não há tratamento.","Atraso de diagnóstico perigoso."],
+"Clínica e imagem suspeitas vencem uma biópsia benigna isolada.");
+Q("q07","benign",1,"Jovem de 22 anos com nódulo mamário de 1,5 cm, móvel, indolor, ultrassonografia típica de fibroadenoma. Conduta?",
+["Mastectomia","Quimioterapia","Seguimento clínico e ultrassonográfico, com exérese se crescimento, sintomas ou dúvida","Radioterapia","Esvaziamento axilar"],2,
+["Absurdo para lesão benigna.","Sem indicação.","Correta: fibroadenoma típico e concordante pode ser acompanhado; critérios de exérese incluem crescimento, &gt;3 cm, sintomas, atipias.","Sem indicação.","Sem indicação."],
+"Fibroadenoma típico: observar; exérese por critérios.");
+Q("q08","benign",2,"Mulher de 46 anos, nódulo de 6 cm que dobrou em poucos meses. Core: lesão fibroepitelial com estroma celular. Melhor conduta?",
+["Seguimento em 6 meses","Exérese ampla com margem ≥1 cm, sem esvaziamento axilar de rotina","Esvaziamento axilar obrigatório","Hormonioterapia","Punção de alívio"],1,
+["Crescimento rápido indica tratamento cirúrgico.","Correta: tumor filoides é tratado com exérese ampla; disseminação é hematogênica.","Linfonodos raramente são acometidos.","Não é tumor hormônio-dependente na prática clínica.","Não é cisto."],
+"Filoides: cresce rápido; margem ampla; axila poupada.");
+Q("q09","benign",2,"Mulher de 40 anos com derrame papilar sanguinolento, espontâneo, de um único ducto, com mamografia e ultrassonografia normais. Conduta?",
+["Tranquilizar e observar","Excisão do ducto acometido","Cirurgia só se houver nódulo","Dosar prolactina e alta","Mastectomia"],1,
+["Derrame patológico não pode ser apenas observado.","Correta: papiloma é a causa mais comum, mas carcinoma deve ser afastado histologicamente.","Imagem normal não exclui lesão intraductal.","Útil em derrame lácteo bilateral, não aqui.","Desproporcional."],
+"Uniductal + espontâneo + sanguinolento = ressecar o ducto.");
+Q("q10","benign",1,"Mulher de 32 anos, derrame esverdeado, bilateral, multiductal, só à expressão forçada. Conduta?",
+["Microdocectomia","Mastectomia","Tranquilização e orientação para não expressar as mamas","Quimioterapia","Biópsia excisional bilateral"],2,
+["Indicada para derrame patológico.","Desproporcional.","Correta: derrame fisiológico, sem investigação invasiva.","Sem indicação.","Sem indicação."],
+"Bilateral, multiductal, provocado = fisiológico.");
+Q("q11","benign",2,"Puérpera com dor, eritema e febre na mama há 36 horas, sem abscesso. Qual a conduta?",
+["Suspender a amamentação","Manter o esvaziamento da mama, analgesia e antibiótico com cobertura para Staphylococcus","Cirurgia imediata","Corticoide sistêmico","Radioterapia"],1,
+["Interromper piora a estase.","Correta: mastite lactacional se trata com esvaziamento frequente e antibiótico anti-estafilocócico.","Cirurgia é para abscesso.","Sem indicação.","Sem indicação."],
+"Mastite: manter amamentar.");
+Q("q12","especiais",3,"Mulher de 52 anos, não lactante, com ‘mastite’ de uma mama há 3 semanas, sem melhora com dois ciclos de antibiótico. Eritema e edema (pele em casca de laranja) acometendo mais de um terço da mama. Qual a hipótese e a conduta?",
+["Mastite resistente: trocar antibiótico","Carcinoma inflamatório (T4d): biópsia e encaminhamento imediato","Fibroadenoma complexo","Doença fibrocística","Observação por 3 meses"],1,
+["Persistência sem resposta exige biópsia.","Correta: eritema/edema extensos e evolução rápida, sem resposta, sugerem carcinoma inflamatório.","Não explica o quadro inflamatório.","Idem.","Atraso grave."],
+"Mastite que não responde = biópsia.");
+Q("q13","especiais",2,"Mulher de 60 anos com eczema descamativo unilateral do mamilo, sem melhora com corticoide tópico. Conduta?",
+["Manter corticoide","Biópsia do mamilo e imagem mamária","Antifúngico","Seguimento em 1 ano","Mastectomia imediata sem diagnóstico"],1,
+["Falha terapêutica exige investigação.","Correta: doença de Paget, associada a carcinoma subjacente.","Sem base.","Perigoso.","Primeiro diagnóstico."],
+"Eczema unilateral do mamilo que não cura = Paget.");
+Q("q14","risco",2,"Qual dos fatores abaixo está associado a redução do risco de câncer de mama?",
+["Menarca precoce","Nuliparidade","Amamentação prolongada","Terapia hormonal combinada prolongada","Mutação em BRCA1"],2,
+["Aumenta risco.","Aumenta risco.","Correta: amamentar protege.","Aumenta risco.","Risco vitalício elevado."],
+"Amamentação protege.");
+Q("q15","risco",2,"Qual paciente deve ser encaminhada à avaliação para síndrome hereditária (aconselhamento genético)?",
+["72 anos, luminal A, sem parentes afetados","45 anos, câncer de mama triplo-negativo","60 anos, CDIS de baixo grau","50 anos, cisto simples","30 anos, fibroadenoma"],1,
+["Perfil esporádico.","Correta: triplo-negativo até ~60 anos é critério de teste (BRCA).","Perfil esporádico.","Benigno.","Benigno."],
+"Triplo-negativo jovem → BRCA.");
+Q("q16","risco",3,"Mulher de 32 anos, portadora de variante patogênica BRCA1. Qual estratégia de rastreamento mais se ajusta?",
+["Mamografia bienal a partir dos 50 anos","Mamografia anual + RM anual de mamas a partir de cerca de 25–30 anos, com aconselhamento sobre redução de risco","Apenas autoexame","Ultrassonografia bienal","Nenhuma até aparecer sintoma"],1,
+["Atraso.","Correta: alto risco exige RM e mamografia anuais, iniciadas mais cedo (idade exata varia conforme diretriz).","Insuficiente.","Insuficiente.","Atraso."],
+"Alto risco: RM + mamografia, cedo.");
+Q("q17","risco",2,"Core biopsy mostra hiperplasia ductal atípica. Conduta usual?",
+["Alta sem seguimento","Exérese cirúrgica pelo risco de subestimação","Quimioterapia","Radioterapia","Mastectomia bilateral"],1,
+["Risco de câncer associado.","Correta: atipia na biópsia pode esconder CDIS ou invasivo.","Sem indicação.","Sem indicação.","Desproporcional."],
+"Atipia no core → exérese.");
+Q("q18","subtipo",1,"Tumor RE+, RP+, HER2 negativo, Ki-67 baixo. Qual o subtipo e a base do tratamento sistêmico?",
+["Luminal A; hormonioterapia","HER2 puro; trastuzumabe","Triplo-negativo; quimioterapia","Luminal B HER2+; só quimioterapia","Basal; imunoterapia"],0,
+["Correta.","HER2 está negativo.","Há receptores hormonais.","HER2 negativo.","Não é basal."],
+"Luminal A: endócrina.");
+Q("q19","subtipo",2,"Qual o tratamento sistêmico base de um tumor HER2 positivo e RE negativo?",
+["Hormonioterapia isolada","Quimioterapia associada a anticorpo anti-HER2","Observação","Radioterapia isolada","Imunoterapia isolada"],1,
+["Sem receptor hormonal.","Correta.","Subtrata.","Não é sistêmico.","Não é padrão."],
+"HER2+ → anti-HER2 + quimio.");
+Q("q20","subtipo",2,"Mulher de 40 anos, tumor triplo-negativo de 3 cm com linfonodo axilar palpável (cT2N1). Melhor estratégia?",
+["Cirurgia e observação","Quimioterapia neoadjuvante seguida de cirurgia","Hormonioterapia","Apenas radioterapia","Somente trastuzumabe"],1,
+["Subtrata e perde avaliação de resposta.","Correta: triplo-negativo ≥T2 ou N+ se beneficia de neoadjuvância.","Sem receptor.","Insuficiente.","HER2 negativo."],
+"TN e HER2+ avançados: neoadjuvância.");
+Q("q21","subtipo",2,"Sobre CDIS, é correto afirmar:",
+["Exige esvaziamento axilar rotineiro","Não invade o estroma e geralmente não exige esvaziamento axilar","É sempre metastático","Tratado apenas com quimioterapia","Nunca se apresenta como microcalcificações"],1,
+["Não é rotina.","Correta.","Não é invasivo.","Não é padrão.","Apresentação frequente."],
+"CDIS: sem linfonodos na rotina.");
+Q("q22","subtipo",2,"Qual característica é típica do carcinoma lobular invasivo?",
+["Alta expressão de E-caderina","Perda de E-caderina, tendência a multicentricidade e bilateralidade","Nunca é RE positivo","Sempre HER2 positivo","Sempre unifocal"],1,
+["É perdida.","Correta.","Em geral RE+.","Em geral HER2 negativo.","Frequentemente multifocal."],
+"Lobular: E-caderina negativa.");
+Q("q23","estad",2,"Tumor de 3 cm, linfonodos axilares móveis acometidos (palpáveis), sem metástase. Classificação TNM?",
+["T1N0M0","T2N1M0","T3N0M0","T4N2M0","T2N0M1"],1,
+["Tumor maior que 2 cm.","Correta: &gt;2 até 5 cm = T2; linfonodos axilares móveis = N1.","Seria &gt;5 cm.","Sem invasão de pele/parede.","Sem metástase."],
+"T2: &gt;2–5 cm; N1: axila móvel.");
+Q("q24","estad",3,"O carcinoma inflamatório corresponde a qual categoria T?",
+["T1","T2","T3","T4d","Tis"],3,
+["Tumor ≤2 cm.","Tumor &gt;2–5 cm.","&gt;5 cm.","Correta: T4d.","In situ."],
+"Inflamatório = T4d.");
+Q("q25","trat",2,"Mulher com tumor de 1,5 cm e axila clinicamente negativa. Qual o manejo da axila?",
+["Esvaziamento axilar sempre","Biópsia do linfonodo sentinela","Nada","Radioterapia axilar sem avaliação","Biópsia do fígado"],1,
+["Morbidade excessiva (linfedema).","Correta.","Perde estadiamento.","Sem avaliação.","Absurdo."],
+"cN0 → sentinela.");
+Q("q26","trat",2,"Qual situação contraindica cirurgia conservadora da mama?",
+["Tumor de 1,5 cm unifocal","Microcalcificações difusas suspeitas ou multicentricidade","Axila negativa","Idade avançada","Receptor hormonal positivo"],1,
+["Boa indicação.","Correta.","Não contraindica.","Não contraindica.","Não contraindica."],
+"Multicêntrico/difuso → mastectomia.");
+Q("q27","trat",2,"Mulher de 62 anos, pós-menopausa, tumor luminal A operado. Qual a hormonioterapia adjuvante de escolha?",
+["Inibidor de aromatase","Quimioterapia citotóxica isolada","Trastuzumabe","Nenhuma","Estrogênio"],0,
+["Correta (tamoxifeno é alternativa).","Não é a base de luminal A.","HER2 negativo.","Perde benefício.","Contraindicado."],
+"Pós-menopausa: IA; pré: tamoxifeno.");
+Q("q28","trat",3,"No seguimento de mulher assintomática após tratamento de câncer de mama inicial, qual item NÃO é recomendado de rotina?",
+["Consulta periódica","Mamografia anual","Dosagem de marcadores tumorais e exames de imagem de estadiamento","Orientação de atividade física","Avaliação de saúde óssea se usar IA"],2,
+["Recomendada.","Recomendada.","Correta: não melhora sobrevida em assintomáticas.","Recomendada.","Recomendada."],
+"Sem marcadores nem PET de rotina.");
+Q("q29","especiais",3,"Gestante de 14 semanas com carcinoma invasivo HER2+. O que é INCORRETO?",
+["A cirurgia pode ser realizada","A quimioterapia é evitada no primeiro trimestre","Trastuzumabe pode ser usado durante a gestação sem restrição","A radioterapia costuma ser adiada para o pós-parto","Mamografia com proteção é possível"],2,
+["Correto.","Correto.","Correta: é contraindicado na gestação.","Correto.","Correto."],
+"Gestação: sem anti-HER2 e sem hormonioterapia.");
+Q("q30","rastr",2,"Segundo a diretriz do Ministério da Saúde de 2015, o rastreamento mamográfico de rotina recomendado era:",
+["Anual de 40 a 74","Bienal de 50 a 69 anos","Anual a partir de 35","Bienal de 40 a 74","Apenas autoexame"],1,
+["É recomendação de sociedades.","Correta (padrão histórico de prova).","Não corresponde.","É recomendação da USPSTF.","Não recomendado."],
+"MS 2015: 50–69, bienal.");
+Q("q31","rastr",3,"Sobre as recomendações atuais, assinale a correta:",
+["A USPSTF (2024) recomenda mamografia bienal de 40 a 74 anos","Todas as fontes concordam com 50–69 anos bienal","Nenhuma fonte recomenda iniciar aos 40","Autoexame substitui a mamografia","Ressonância é rastreamento universal"],0,
+["Correta.","Há divergência.","Sociedades e orientação de 2025 consideram iniciar aos 40.","Não substitui.","Só para alto risco."],
+"Cite a fonte e a idade.");
+Q("q32","comun",2,"Ao entregar BI-RADS 4 a uma paciente, qual atitude é mais adequada?",
+["Dizer que tem câncer","Explicar que há alteração que precisa de biópsia, combinar prazo e canal de contato","Dizer que não é nada","Entregar o laudo sem explicar","Adiar a conversa"],1,
+["Ainda não há diagnóstico.","Correta.","Falsa tranquilização.","Falha de comunicação.","Aumenta ansiedade e risco."],
+"Dizer o que se sabe, o que não se sabe e o próximo passo.");
+Q("q33","queixa",2,"Em ordem decrescente, qual sequência indica o risco de malignidade por queixa?",
+["Dor &gt; descarga &gt; massa","Massa &gt; descarga &gt; dor","Descarga &gt; massa &gt; dor","Dor &gt; massa &gt; descarga","Todas iguais"],1,
+["Inverteu.","Correta.","Inverteu.","Inverteu.","Não."],
+"Massa ~20%, descarga ~5%, dor ≤1%.");
+Q("q34","imagem",2,"Qual indicação de ressonância magnética mamária é mais bem estabelecida?",
+["Rastreamento universal aos 40","Rastreamento de mulheres de alto risco, como portadoras de BRCA","Cisto simples","Mastalgia cíclica","Fibroadenoma típico"],1,
+["Não.","Correta.","Não.","Não.","Não."],
+"RM: alto risco e problemas específicos.");
+Q("q35","queixa",1,"Ultrassonografia: cisto anecoico, parede fina, reforço acústico posterior. Qual a categoria e a conduta?",
+["BI-RADS 2; observação","BI-RADS 5; biópsia","BI-RADS 4C; exérese","BI-RADS 0; mamografia","BI-RADS 6; tratamento"],0,
+["Correta: cisto simples é benigno.","Não é suspeito.","Não é suspeito.","Está caracterizado.","Não há câncer."],
+"Cisto simples = BI-RADS 2.");
+Q("q36","benign",3,"Mulher de 50 anos, 1 ano após radioterapia da mama, apresenta nódulo duro com calcificações em casca de ovo. Qual a hipótese e a conduta?",
+["Necrose gordurosa; confirmar com biópsia e acompanhar","Fibroadenoma","Carcinoma inflamatório","Papiloma","Mastite lactacional"],0,
+["Correta: pode simular câncer; biópsia define.","Faixa etária e contexto não combinam.","Não há sinais inflamatórios.","Não explica.","Não lactante."],
+"Necrose gordurosa imita câncer: biópsia.");
+
+var CASOS = [
+ {id:"c1",title:"Caso 1 — Nódulo em jovem",steps:[
+  {t:"Paciente de 23 anos, nódulo de 2 cm no quadrante superior externo da mama direita, móvel, indolor, notado há 3 meses. Sem história familiar. Qual o próximo passo?",o:["Mamografia","Ultrassonografia mamária","Mastectomia","Quimioterapia"],a:1,f:"Em jovem, o primeiro exame é a ultrassonografia."},
+  {t:"A ultrassonografia mostra nódulo oval, paralelo à pele, circunscrito, hipoecoico homogêneo, 2 cm (BI-RADS 3). Qual a conduta?",o:["Seguimento clínico e ultrassonográfico","Esvaziamento axilar","Radioterapia","Ressonância obrigatória"],a:0,f:"Fibroadenoma provável: seguimento curto; exérese por critérios."},
+  {t:"Seis meses depois, o nódulo passou para 3,5 cm. O que muda?",o:["Nada, manter seguimento","Indicar biópsia/exérese pelo crescimento","Iniciar tamoxifeno","Mamografia anual apenas"],a:1,f:"Crescimento muda o BI-RADS 3: tecido para diagnóstico, incluindo filoides."}]},
+ {id:"c2",title:"Caso 2 — Derrame papilar",steps:[
+  {t:"Mulher de 44 anos com secreção sanguinolenta espontânea na mama esquerda, vista na roupa, por um ducto. Qual a característica que define a investigação?",o:["Secreção patológica (uniductal, espontânea, sanguinolenta)","Secreção fisiológica","Galactorreia","Mastite"],a:0,f:"Esses critérios caracterizam derrame patológico."},
+  {t:"Mamografia e ultrassonografia normais. O que fazer?",o:["Alta","Excisão do ducto acometido (± ductografia/RM)","Mastectomia","Prolactina e alta"],a:1,f:"Imagem normal não exclui papiloma ou carcinoma intraductal."},
+  {t:"Histologia: papiloma intraductal sem atipia. Conduta final?",o:["Seguimento habitual","Quimioterapia","Esvaziamento axilar","Radioterapia"],a:0,f:"Papiloma sem atipia ressecado: seguimento habitual."}]},
+ {id:"c3",title:"Caso 3 — Nódulo suspeito em mulher de 58 anos",steps:[
+  {t:"Nódulo duro, irregular, fixo, 3 cm, QSE da mama direita, linfonodo axilar palpável móvel. Exames de primeira linha?",o:["Mamografia + ultrassonografia","Só ultrassonografia","Cintilografia","Nenhum"],a:0,f:"≥35–40 anos: mamografia + US, e axila."},
+  {t:"BI-RADS 5. Próximo passo?",o:["Seguimento em 6 meses","Core biopsy com IHQ","PAAF isolada","Exérese sem biópsia"],a:1,f:"Histologia + IHQ antes de planejar o tratamento."},
+  {t:"Core: carcinoma invasivo NST, RE+, RP+, HER2−, Ki-67 15%, grau 2. Estadiamento clínico T2N1M0. Qual o subtipo e o plano geral?",o:["Triplo-negativo; neoadjuvância","Luminal; cirurgia com abordagem axilar, RT conforme critérios e hormonioterapia (± quimioterapia por risco)","HER2 puro; trastuzumabe","In situ; observação"],a:1,f:"Luminal HER2−: hormonioterapia é a base; quimioterapia depende de risco."}]},
+ {id:"c4",title:"Caso 4 — Puérpera com dor na mama",steps:[
+  {t:"Puérpera com 3 semanas, febre, dor, eritema e calor em quadrante da mama. Hipótese mais provável?",o:["Mastite lactacional","Carcinoma inflamatório","Paget","Papiloma"],a:0,f:"Contexto lactacional, início agudo."},
+  {t:"Há 4 dias em antibiótico, febre persiste e surge área flutuante. O que fazer?",o:["Suspender amamentar e observar","Ultrassonografia e drenagem/punção do abscesso","Biópsia excisional imediata","Radioterapia"],a:1,f:"Suspeita de abscesso: US e drenagem."},
+  {t:"Dois meses depois, endurecimento e edema persistentes na mama, sem coleção. Qual o passo seguinte?",o:["Novo antibiótico apenas","Imagem e biópsia para afastar carcinoma inflamatório","Alta","Anti-inflamatório e observar"],a:1,f:"Mastite que não resolve ou recidiva exige biópsia."}]},
+ {id:"c5",title:"Caso 5 — Alto risco",steps:[
+  {t:"Mulher de 31 anos, mãe e tia com câncer de mama aos 40 e 42, irmã com câncer de ovário. O que fazer?",o:["Rastreamento aos 50","Aconselhamento genético e teste de painel/BRCA","Mastectomia imediata","Nada"],a:1,f:"História familiar sugestiva: aconselhamento genético."},
+  {t:"Teste: BRCA1 patogênico. Qual o rastreamento?",o:["Mamografia bienal aos 50","Mamografia e RM anuais iniciadas precocemente","Autoexame","Ultrassonografia isolada"],a:1,f:"Alto risco: RM + mamografia anuais."},
+  {t:"Qual opção de redução de risco deve ser discutida?",o:["Nenhuma","Mastectomia redutora e salpingo-ooforectomia, quimioprevenção, após decisão compartilhada","Apenas dieta","Radioterapia profilática"],a:1,f:"Opções cirúrgicas e clínicas, conforme idade, paridade e preferência."}]}
+];
+var FLASHCARDS = [
+ ["Primeiro exame de imagem em nódulo palpável em mulher &lt;30–35 anos?","Ultrassonografia.","imagem"],
+ ["Primeiro exame em nódulo palpável em mulher ≥35–40 anos?","Mamografia + ultrassonografia.","imagem"],
+ ["BI-RADS 0","Inconclusivo: complementar com outros exames/comparação.","imagem"],
+ ["BI-RADS 1 e 2","Negativo e benigno: rotina.","imagem"],
+ ["BI-RADS 3","Provavelmente benigno (≤2%): seguimento 6–12–24 meses.","imagem"],
+ ["BI-RADS 4 (A, B, C)","Suspeito (&gt;2% a &lt;95%): biópsia.","imagem"],
+ ["BI-RADS 5","Altamente sugestivo (≥95%): biópsia e plano terapêutico.","imagem"],
+ ["BI-RADS 6","Malignidade comprovada por biópsia: tratamento.","imagem"],
+ ["Achado mamográfico suspeito de microcalcificação","Pleomórficas finas, lineares/ramificadas, agrupadas ou segmentares.","imagem"],
+ ["Quando indicar RM mamária?","Alto risco (BRCA, RT torácica, risco vitalício elevado) e situações específicas.","imagem"],
+ ["Risco de malignidade por queixa","Massa ~20% &gt; descarga ~5% &gt; dor ≤1%.","queixa"],
+ ["Sinais clínicos suspeitos","Nódulo duro, irregular, fixo; retração; casca de laranja; eczema do mamilo; derrame uniductal sanguinolento; linfonodo axilar duro.","queixa"],
+ ["Cisto simples na ultrassonografia","BI-RADS 2: anecoico, parede fina, reforço posterior; observar.","queixa"],
+ ["Vantagem da core biopsy sobre a PAAF","Histologia e IHQ; distingue in situ de invasivo.","biopsia"],
+ ["PAAF: usos principais","Cisto e linfonodo axilar (citologia).","biopsia"],
+ ["Biópsia guiada para microcalcificações","Mamotomia/estereotaxia (± marcação).","biopsia"],
+ ["Biópsia benigna discordante de clínica/imagem suspeitas","Repetir biópsia ou exérese: nunca tranquilizar.","biopsia"],
+ ["Fibroadenoma: perfil","20–35 anos, nódulo móvel, indolor, borrachoso; US oval paralelo à pele.","benign"],
+ ["Fibroadenoma: quando operar","Crescimento, &gt;3 cm, sintomas, atipia/dúvida, desejo da paciente.","benign"],
+ ["Tumor filoides: conduta","Exérese ampla com margem ≥1 cm; sem esvaziamento axilar de rotina.","benign"],
+ ["Causa mais comum de derrame uniductal sanguinolento","Papiloma intraductal.","benign"],
+ ["Derrame fisiológico","Bilateral, multiductal, provocado; cores variadas.","benign"],
+ ["Derrame patológico: conduta","Imagem e excisão do ducto.","benign"],
+ ["Mastite lactacional: conduta","Manter esvaziamento, analgesia e antibiótico anti-estafilocócico.","benign"],
+ ["Abscesso mamário","Punção/drenagem guiada por US + antibiótico.","benign"],
+ ["Mastite que não responde ou recidiva","Biópsia: afastar carcinoma inflamatório.","benign"],
+ ["Necrose gordurosa","Pós-trauma/cirurgia/RT; simula câncer; biópsia.","benign"],
+ ["Lesão proliferativa com atipia","Risco ~4–5×; HDA no core → exérese.","risco"],
+ ["Fatores que aumentam risco","Idade, familiar, BRCA, menarca precoce, menopausa tardia, nuliparidade, TH combinada, obesidade pós-menopausa, álcool, mama densa.","risco"],
+ ["Fatores protetores","Amamentação, atividade física, peso saudável, menos álcool.","risco"],
+ ["Sinais de síndrome hereditária","Início precoce, triplo-negativo ≤60, bilateral, ovário, mama masculina, vários casos.","risco"],
+ ["Rastreamento de alto risco","Mamografia + RM anuais, início precoce, aconselhamento.","risco"],
+ ["Proporção de câncer hereditário","~5–10%; maioria por BRCA1/2.","risco"],
+ ["Tipo histológico invasivo mais comum","NST (ductal SOE), ~75%.","subtipo"],
+ ["Carcinoma lobular invasivo","Perda de E-caderina; multicêntrico/bilateral.","subtipo"],
+ ["CDIS: achado e conduta","Microcalcificações; cirurgia ± RT ± hormonioterapia; sem esvaziamento axilar.","subtipo"],
+ ["Luminal A","RE+ e RP+, HER2−, Ki-67 baixo: hormonioterapia.","subtipo"],
+ ["Luminal B HER2+","RE+, HER2+: quimioterapia + anti-HER2 + hormonioterapia.","subtipo"],
+ ["HER2 puro","RE−/RP−, HER2+: quimioterapia + anti-HER2.","subtipo"],
+ ["Triplo-negativo","RE−, RP−, HER2−: quimioterapia (± imunoterapia); pesquisar BRCA.","subtipo"],
+ ["T1, T2, T3","≤2 cm; &gt;2–5 cm; &gt;5 cm.","estad"],
+ ["T4","Parede torácica (a), pele (b), ambos (c), inflamatório (d).","estad"],
+ ["N1, N2, N3","Axila níveis I–II móvel; fixa/mamária interna; infra/supraclavicular.","estad"],
+ ["Quando fazer estadiamento sistêmico","Doença localmente avançada, N+ ou sintomas; não em I–IIA assintomáticos.","estad"],
+ ["Cirurgia conservadora + RT vs mastectomia","Sobrevida equivalente em estádios iniciais.","trat"],
+ ["Contraindicações à conservadora","Multicentricidade, microcalcificações difusas, margens persistentes positivas, impossibilidade de RT.","trat"],
+ ["Axila cN0","Linfonodo sentinela.","trat"],
+ ["ACOSOG Z0011","Conservadora + RT, T1–2, 1–2 sentinelas positivos: dispensa esvaziamento.","trat"],
+ ["Hormonioterapia: pré e pós-menopausa","Tamoxifeno (pré); inibidor de aromatase (pós, ou pré com supressão).","trat"],
+ ["Neoadjuvância: quem?","TN e HER2+ ≥T2/N+; localmente avançado/inflamatório.","trat"],
+ ["Seguimento pós-tratamento","Clínica periódica e mamografia anual; sem marcadores/PET de rotina.","trat"],
+ ["Doença de Paget","Eczema unilateral do mamilo; biópsia + imagem; carcinoma subjacente.","especiais"],
+ ["Carcinoma inflamatório","T4d; eritema/edema ≥1/3 da mama; biópsia; neoadjuvância.","especiais"],
+ ["Câncer na gestação","Cirurgia possível; sem quimio no 1º tri; RT adiada; sem trastuzumabe/hormonioterapia.","especiais"],
+ ["Rastreamento MS 2015","Bienal, 50–69 anos.","rastr"],
+ ["Rastreamento USPSTF 2024","Bienal, 40–74 anos.","rastr"],
+ ["Rastreamento (sociedades brasileiras)","Anual, 40–74 anos.","rastr"],
+ ["Autoexame","Não substitui rastreamento: conscientização + exame clínico.","rastr"],
+ ["Protocolo para más notícias","SPIKES: ambiente, percepção, convite, conhecimento, emoções, estratégia/resumo.","comun"],
+ ["Comunicar BI-RADS 4","“Há alteração que precisa de biópsia”; prazo e contato definidos.","comun"]
+].map(function(c,i){return {id:"f"+(i+1<10?"0":"")+(i+1),f:c[0],b:c[1],topic:c[2]};});
+var GLOSSARIO = [
+ ["BI-RADS","Sistema do ACR que padroniza o laudo e a conduta em imagem mamária."],
+ ["UDLT","Unidade ductulolobular terminal: origem da maioria das lesões."],
+ ["Core biopsy","Biópsia por agulha grossa; fornece histologia e IHQ."],
+ ["PAAF","Punção aspirativa por agulha fina; citologia."],
+ ["Mamotomia","Biópsia a vácuo guiada por imagem."],
+ ["Estereotaxia","Guia mamográfica para biópsia de lesões como microcalcificações."],
+ ["Tripla avaliação","Integração de clínica, imagem e patologia."],
+ ["Fibroadenoma","Tumor benigno fibroepitelial mais comum em jovens."],
+ ["Tumor filoides","Tumor fibroepitelial de estroma celular com comportamento variável."],
+ ["Papiloma intraductal","Proliferação papilar em ducto; causa de derrame sanguinolento."],
+ ["Ectasia ductal","Dilatação dos ductos subareolares; mastite periductal."],
+ ["Necrose gordurosa","Reação inflamatória do tecido adiposo pós-trauma/cirurgia/RT."],
+ ["HDA","Hiperplasia ductal atípica: lesão de risco."],
+ ["CLIS/NLIS","Neoplasia lobular in situ: marcador de risco."],
+ ["CDIS","Carcinoma ductal in situ."],
+ ["NST","Carcinoma invasivo de tipo não especial (ductal SOE)."],
+ ["IHQ","Imuno-histoquímica: RE, RP, HER2, Ki-67."],
+ ["RE/RP","Receptores de estrogênio e de progesterona."],
+ ["HER2","Receptor 2 do fator de crescimento epidérmico humano; alvo de anti-HER2."],
+ ["Ki-67","Marcador de proliferação celular."],
+ ["Luminal","Tumores com receptor hormonal positivo."],
+ ["Triplo-negativo","RE−, RP− e HER2−."],
+ ["BRCA1/BRCA2","Genes de reparo de DNA; mutações elevam risco de mama e ovário."],
+ ["TNM","Classificação de tumor, linfonodos e metástase."],
+ ["T4d","Carcinoma inflamatório."],
+ ["Linfonodo sentinela","Primeiro linfonodo de drenagem; avalia a axila em cN0."],
+ ["Esvaziamento axilar","Retirada de linfonodos axilares (níveis I–II/III); risco de linfedema."],
+ ["Neoadjuvância","Terapia sistêmica antes da cirurgia."],
+ ["Adjuvância","Terapia após a cirurgia."],
+ ["pCR","Resposta patológica completa."],
+ ["Tamoxifeno","Modulador seletivo do receptor de estrogênio."],
+ ["Inibidor de aromatase","Bloqueia a conversão periférica de androgênio em estrogênio (pós-menopausa)."],
+ ["Trastuzumabe","Anticorpo anti-HER2."],
+ ["CDK4/6","Inibidores usados com hormonioterapia na doença metastática luminal."],
+ ["Paget do mamilo","Eczema do complexo areolopapilar associado a carcinoma."],
+ ["Sobrediagnóstico","Diagnóstico de lesão que não causaria dano em vida."]
+];
+var MINDMAP = {l:"Doenças da mama",c:[
+ {l:"Avaliação",c:[{l:"Anamnese",d:"Queixa, ciclo, hormônios, família"},{l:"Exame clínico",d:"Inspeção, palpação, linfáticos"},{l:"Queixas",d:"Massa 20% · descarga 5% · dor ≤1%"}]},
+ {l:"Imagem e BI-RADS",c:[{l:"US em jovens",d:"&lt;30–35 anos"},{l:"Mamografia + US",d:"≥35–40 anos"},{l:"RM",d:"Alto risco"},{l:"BI-RADS",d:"0 complementa · 1–2 rotina · 3 seguimento · 4–5 biópsia · 6 tratar"}]},
+ {l:"Biópsia",c:[{l:"Core",d:"Histologia + IHQ"},{l:"PAAF",d:"Cisto, linfonodo"},{l:"Mamotomia",d:"Microcalcificações"},{l:"Tripla avaliação",d:"Discordância → repetir"}]},
+ {l:"Benignas",c:[{l:"Fibroadenoma",d:"Jovem, móvel"},{l:"Filoides",d:"Cresce rápido"},{l:"Cisto",d:"BI-RADS 2"},{l:"Papiloma",d:"Derrame uniductal"},{l:"Mastite/abscesso",d:"Manter amamentar"},{l:"Atipia",d:"HDA → exérese"}]},
+ {l:"Risco",c:[{l:"Fatores",d:"Idade, família, hormônio, mama densa"},{l:"BRCA",d:"TN ≤60, ovário, família"},{l:"Alto risco",d:"Mamografia + RM"}]},
+ {l:"Câncer",c:[{l:"In situ",d:"CDIS; CLIS marcador"},{l:"Invasivo",d:"NST 75%; lobular"},{l:"Subtipos",d:"Luminal A/B, HER2, TN"},{l:"TNM",d:"T1 ≤2; T2 ≤5; T3 &gt;5; T4d inflamatório"}]},
+ {l:"Tratamento",c:[{l:"Local",d:"Conservadora + RT ≈ mastectomia"},{l:"Axila",d:"cN0 → sentinela"},{l:"Sistêmico",d:"Hormônio · anti-HER2 · quimio"},{l:"Neoadjuvância",d:"TN, HER2+, avançado"},{l:"Seguimento",d:"Mamografia anual"}]},
+ {l:"Especiais",c:[{l:"Paget",d:"Biópsia do mamilo"},{l:"Inflamatório",d:"T4d"},{l:"Gestação",d:"Sem anti-HER2/hormônio"}]},
+ {l:"Rastreamento",c:[{l:"MS 2015",d:"50–69 bienal"},{l:"Sociedades",d:"40–74 anual"},{l:"USPSTF 2024",d:"40–74 bienal"},{l:"MS 2025",d:"Acesso a partir dos 40 (conferir)"}]}
+]};
+
+(function(){
+"use strict";
+var SRS_STEPS=[0,1,3,7,14,30,60];
+var CHK=["Sei escolher o primeiro exame de imagem por idade (US × mamografia + US).","Sei aplicar BI-RADS 0 a 6 e a conduta de cada categoria.","Sei escolher core, PAAF, mamotomia e reconhecer discordância radiopatológica.","Diferencio fibroadenoma, filoides, cisto, papiloma, mastite e necrose gordurosa.","Reconheço derrame papilar fisiológico × patológico e a conduta.","Conheço os fatores de risco e os sinais de síndrome hereditária.","Classifico os subtipos por IHQ e o tratamento sistêmico correspondente.","Sei o TNM básico e quando estadiar sistemicamente.","Sei o manejo da axila (sentinela × esvaziamento) e quando indicar RT.","Reconheço Paget, carcinoma inflamatório e as restrições na gestação.","Comparo as recomendações de rastreamento e cito a fonte.","Sei comunicar um resultado alterado com clareza e decisão compartilhada."];
+var CATS=["Conhecimento","Interpretação","Priorização","Conduta","Comunicação","Distração","Viés","Excesso de confiança"];
+var DIFF={1:"Básico",2:"Intermediário",3:"Avançado"};
+var mem={};
+function $(s,r){return (r||document).querySelector(s);}
+function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function plain(s){return String(s).replace(/<[^>]+>/g,"").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&");}
+function today(){var d=new Date();return iso(d);}
+function iso(d){var m=d.getMonth()+1,dd=d.getDate();return d.getFullYear()+"-"+(m<10?"0":"")+m+"-"+(dd<10?"0":"")+dd;}
+function addDays(s,n){var p=s.split("-");var d=new Date(+p[0],+p[1]-1,+p[2]+n);return iso(d);}
+function br(s){var p=s.split("-");return p[2]+"/"+p[1]+"/"+p[0];}
+var S;
+function fresh(){return {theme:"",font:100,dense:false,last:"m1",visited:{},diag:{},quiz:{},cards:{},cases:{},chk:{},errors:[],studyDate:"2026-10-16"};}
+function load(){try{var r=localStorage.getItem(APP_KEY);if(r){var o=JSON.parse(r);var f=fresh();for(var k in f){if(o[k]===undefined)o[k]=f[k];}return o;}}catch(e){}return fresh();}
+function save(){try{localStorage.setItem(APP_KEY,JSON.stringify(S));}catch(e){}}
+function toast(m){var t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(toast._t);toast._t=setTimeout(function(){t.classList.remove("show");},2600);}
+function download(name,text,type){var b=new Blob([text],{type:type||"text/plain;charset=utf-8"});var a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);}
+function csvCell(s){return '"'+plain(s).replace(/"/g,'""')+'"';}
+function qById(id){for(var i=0;i<QUESTOES.length;i++){if(QUESTOES[i].id===id)return QUESTOES[i];}return null;}
+function topicObj(t){for(var i=0;i<OBJETIVOS.length;i++){if(OBJETIVOS[i].topics.indexOf(t)>-1)return OBJETIVOS[i].id;}return "";}
+
+/* ---------- aparência ---------- */
+function applyLook(){
+  if(S.theme){document.documentElement.setAttribute("data-theme",S.theme);}else{document.documentElement.removeAttribute("data-theme");}
+  document.documentElement.style.fontSize=S.font+"%";
+  document.body.classList.toggle("dense",!!S.dense);
+  $("#btnDense").setAttribute("aria-pressed",S.dense?"true":"false");
+}
+function initLook(){
+  $("#btnTheme").onclick=function(){S.theme=(S.theme==="dark")?"light":"dark";save();applyLook();};
+  $("#btnFontUp").onclick=function(){S.font=Math.min(140,S.font+10);save();applyLook();};
+  $("#btnFontDown").onclick=function(){S.font=Math.max(80,S.font-10);save();applyLook();};
+  $("#btnDense").onclick=function(){S.dense=!S.dense;save();applyLook();};
+  $("#btnPrint").onclick=function(){$$("details.acc").forEach(function(d){d.open=true;});window.print();};
+  $("#btnResume").onclick=function(){var el=document.getElementById(S.last)||document.getElementById("m1");el.scrollIntoView({behavior:"smooth"});};
+  applyLook();
+}
+
+/* ---------- navegação e progresso ---------- */
+function buildNav(){
+  var nav=$("#navscroll");var mods=$$("section.mod");
+  mods.forEach(function(m){
+    var n=$(".mod-num",m).textContent;var a=document.createElement("a");a.href="#"+m.id;a.textContent=n;a.title=$("h2",m).textContent;a.setAttribute("data-mod",m.id);
+    a.style.cssText="padding:.3em .55em;border:1px solid var(--line);border-radius:6px;text-decoration:none;font-size:.78rem;font-family:var(--mono);white-space:nowrap;color:var(--ink-2)";
+    nav.appendChild(a);
+  });
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){S.visited[e.target.id]=1;S.last=e.target.id;
+      $$("#navscroll a").forEach(function(a){var on=a.getAttribute("data-mod")===e.target.id;a.style.background=on?"var(--accent-soft)":"";a.style.borderColor=on?"var(--accent)":"";});
+      save();updateGlobal();}});},{rootMargin:"-30% 0px -60% 0px"});
+    mods.forEach(function(m){io.observe(m);});
+  }
+}
+function stats(){
+  var ans=0,ok=0,hiw=0;
+  QUESTOES.forEach(function(q){var r=S.quiz[q.id];if(r&&r.last){ans++;if(r.last.ok)ok++;else if(r.last.conf===2)hiw++;}});
+  var seen=0,due=0,nw=0,td=today();
+  FLASHCARDS.forEach(function(c){var r=S.cards[c.id];if(!r){nw++;due++;}else{seen++;if(r.due<=td)due++;}});
+  var cases=0;CASOS.forEach(function(c){if(S.cases[c.id]&&S.cases[c.id].done)cases++;});
+  var vis=Object.keys(S.visited).length;
+  return {ans:ans,ok:ok,hiw:hiw,seen:seen,due:due,nw:nw,cases:cases,vis:vis};
+}
+function updateGlobal(){
+  var s=stats();var mods=$$("section.mod").length||21;
+  var pct=Math.round(Math.min(1,s.vis/mods)*40+s.ans/QUESTOES.length*30+s.seen/FLASHCARDS.length*20+s.cases/CASOS.length*10);
+  $("#globalBar").style.width=pct+"%";$("#globalPct").textContent=pct+"%";
+  var pb=$(".progress-mini");if(pb)pb.setAttribute("aria-valuenow",pct);
+}
+
+/* ---------- camadas ---------- */
+function initLayers(){
+  $$("[data-layer]").forEach(function(b){b.onclick=function(){var v=b.getAttribute("data-layer");
+    $$("details.acc").forEach(function(d){var m=/layer-(\d)/.exec(d.className);var n=m?m[1]:"";
+      if(v==="all")d.open=true;else if(v==="none")d.open=false;else d.open=(n===v);});};});
+}
+
+/* ---------- busca ---------- */
+function initSearch(){
+  var inp=$("#globalSearch"),info=$("#searchInfo");
+  function run(){
+    var q=inp.value.trim().toLowerCase();
+    $$("section.mod").forEach(function(m){m.style.outline="";});
+    if(q.length<2){info.textContent="";return;}
+    var hits=[];
+    $$("section.mod").forEach(function(m){if(m.textContent.toLowerCase().indexOf(q)>-1){hits.push(m);m.style.outline="2px solid var(--gold)";
+      $$("details.acc",m).forEach(function(d){if(d.textContent.toLowerCase().indexOf(q)>-1)d.open=true;});}});
+    info.textContent=hits.length?hits.length+" módulo(s): "+hits.map(function(m){return $(".mod-num",m).textContent;}).join(", "):"Nenhum resultado.";
+    if(hits.length)hits[0].scrollIntoView({behavior:"smooth"});
+  }
+  $("#btnSearchGo").onclick=run;
+  inp.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();run();}});
+  $("#btnSearchClear").onclick=function(){inp.value="";run();};
+  $("#btnExport").onclick=function(){download("sm2_mama_progresso_"+today()+".json",JSON.stringify({app:APP_KEY,data:S},null,1),"application/json");toast("Progresso exportado.");};
+  $("#btnImport").onclick=function(){$("#fileImport").click();};
+  $("#fileImport").onchange=function(){var f=this.files[0];if(!f)return;var r=new FileReader();r.onload=function(){try{var o=JSON.parse(r.result);if(!o||o.app!==APP_KEY||!o.data)throw 1;S=o.data;var fr=fresh();for(var k in fr){if(S[k]===undefined)S[k]=fr[k];}save();location.reload();}catch(e){toast("Arquivo inválido.");}};r.readAsText(f);};
+  $("#btnReset").onclick=function(){if(confirm("Apagar todo o progresso desta aula neste navegador?")){S=fresh();save();location.reload();}};
+}
+
+/* ---------- objetivos e diagnóstico ---------- */
+function renderObjectives(){
+  var h="";OBJETIVOS.forEach(function(o){h+='<div class="objitem"><strong>'+o.id+'</strong> '+esc(o.t)+'</div>';});
+  $("#objList").innerHTML=h;
+  var c="";OBJETIVOS.forEach(function(o){var t=0,k=0;QUESTOES.forEach(function(q){if(o.topics.indexOf(q.topic)>-1){t++;var r=S.quiz[q.id];if(r&&r.last){k++;}}});
+    var ok=0;QUESTOES.forEach(function(q){if(o.topics.indexOf(q.topic)>-1){var r=S.quiz[q.id];if(r&&r.last&&r.last.ok)ok++;}});
+    var p=k?Math.round(ok/k*100):0;var cls=!k?"":(p>=80?"high":p>=60?"mid":"low");
+    c+='<div style="margin-bottom:7px"><div>'+o.id+' · '+k+'/'+t+' respondidas'+(k?' · '+p+'% de acerto':'')+'</div><div class="bar"><i class="'+cls+'" style="width:'+(k?p:0)+'%"></i></div></div>';});
+  $("#objCoverage").innerHTML=c;
+}
+function renderDiag(){
+  var host=$("#diagQuiz");var h="<h4>Mini-diagnóstico (5 questões)</h4>";
+  DIAG.forEach(function(d,i){var st=S.diag[i];
+    h+='<div class="qcard"><div class="qstem"><strong>'+(i+1)+'.</strong> '+d.q+'</div>';
+    d.o.forEach(function(o,j){var cls="opt";if(st!==undefined){cls+=" disabled"+(j===d.a?" correct":(j===st?" wrong":""));}
+      h+='<label class="'+cls+'"><input type="radio" name="dg'+i+'" value="'+j+'"'+(st!==undefined?' disabled':'')+(st===j?' checked':'')+'><span class="lt">'+"ABCD".charAt(j)+'</span><span>'+o+'</span></label>';});
+    if(st!==undefined){h+='<div class="fb '+(st===d.a?"ok":"no")+'"><strong>'+(st===d.a?"Correto.":"Incorreto.")+'</strong> '+d.e+' <span class="small muted">('+d.obj+')</span></div>';}
+    h+='</div>';});
+  var done=Object.keys(S.diag).length;
+  if(done<DIAG.length)h+='<button class="btn" id="diagGo">Corrigir respostas marcadas</button>';
+  host.innerHTML=h;
+  var res=$("#diagResult");
+  if(done===DIAG.length){var k=0;DIAG.forEach(function(d,i){if(S.diag[i]===d.a)k++;});res.innerHTML='<div class="callout"><strong>Resultado: '+k+'/'+DIAG.length+'.</strong> '+(k>=4?"Boa base: foque nas camadas 3 e 4.":k>=2?"Base parcial: leia as camadas 1 e 2 antes das questões.":"Comece pela camada 1 e use os flashcards.")+'</div>';}else res.innerHTML="";
+  var b=$("#diagGo");if(b)b.onclick=function(){var any=false;DIAG.forEach(function(d,i){var r=$('input[name="dg'+i+'"]:checked',host);if(r&&S.diag[i]===undefined){S.diag[i]=+r.value;any=true;}});if(any){save();renderDiag();}else toast("Marque ao menos uma alternativa.");};
+}
+
+/* ---------- casos ---------- */
+function renderCases(){
+  var host=$("#casesHost");var h="";
+  CASOS.forEach(function(c){var st=S.cases[c.id]||{sel:{},done:false};
+    h+='<details class="acc" '+(st.done?"":"")+'><summary>'+esc(c.title)+(st.done?' · concluído':'')+'</summary><div class="acc-body">';
+    c.steps.forEach(function(s,i){var sel=st.sel[i];var open=(i===0)||st.sel[i-1]!==undefined;
+      if(!open)return;
+      h+='<div class="qcard"><div class="qstem"><strong>Etapa '+(i+1)+'.</strong> '+s.t+'</div>';
+      s.o.forEach(function(o,j){var cls="opt";if(sel!==undefined)cls+=" disabled"+(j===s.a?" correct":(j===sel?" wrong":""));
+        h+='<label class="'+cls+'"><input type="radio" name="cs'+c.id+i+'" value="'+j+'"'+(sel!==undefined?' disabled':'')+(sel===j?' checked':'')+'><span class="lt">'+"ABCD".charAt(j)+'</span><span>'+o+'</span></label>';});
+      if(sel!==undefined)h+='<div class="fb '+(sel===s.a?"ok":"no")+'"><strong>'+(sel===s.a?"Correto.":"Incorreto.")+'</strong> '+s.f+'</div>';
+      else h+='<button class="btn sm" data-case="'+c.id+'" data-step="'+i+'">Responder</button>';
+      h+='</div>';});
+    h+='</div></details>';});
+  host.innerHTML=h;
+  $$("[data-case]",host).forEach(function(b){b.onclick=function(){var id=b.getAttribute("data-case"),i=+b.getAttribute("data-step");var c=CASOS.filter(function(x){return x.id===id;})[0];
+    var r=$('input[name="cs'+id+i+'"]:checked',host);if(!r){toast("Escolha uma alternativa antes.");return;}
+    var st=S.cases[id]||{sel:{},done:false};st.sel[i]=+r.value;if(i===c.steps.length-1)st.done=true;S.cases[id]=st;save();
+    var open=$$("details.acc",host).map(function(d){return d.open;});renderCases();$$("details.acc",host).forEach(function(d,k){d.open=open[k];});updateGlobal();};});
+}
+
+/* ---------- questões ---------- */
+var seq=null;
+function initQuizControls(){
+  var sel=$("#qTopic");var h='<option value="">Todos os temas</option>';for(var k in TOPIC_LABEL)h+='<option value="'+k+'">'+esc(TOPIC_LABEL[k])+'</option>';sel.innerHTML=h;
+  $("#qStart").onclick=function(){buildSeq(false);};
+  $("#qErrOnly").onclick=function(){buildSeq(true);};
+  $("#qResetAll").onclick=function(){if(confirm("Zerar o histórico das questões?")){S.quiz={};save();seq=null;renderQuiz();renderPanel();renderObjectives();updateGlobal();}};
+}
+function buildSeq(errOnly){
+  var t=$("#qTopic").value,d=$("#qDiff").value;
+  seq=QUESTOES.filter(function(q){if(t&&q.topic!==t)return false;if(d&&String(q.diff)!==d)return false;if(errOnly){var r=S.quiz[q.id];return r&&r.last&&!r.last.ok;}return true;}).map(function(q){return q.id;});
+  if(!seq.length)toast(errOnly?"Nenhum erro registrado neste filtro.":"Nenhuma questão neste filtro.");
+  renderQuiz();
+}
+function renderKpi(){
+  var s=stats();var acc=s.ans?Math.round(s.ok/s.ans*100):0;
+  $("#qKpi").innerHTML='<div class="kpi"><span>Respondidas</span><b>'+s.ans+'/'+QUESTOES.length+'</b></div><div class="kpi"><span>Acerto</span><b>'+(s.ans?acc+"%":"—")+'</b></div><div class="kpi"><span>Erros com alta confiança</span><b>'+s.hiw+'</b></div><div class="kpi"><span>Cadernos de erros</span><b>'+S.errors.length+'</b></div>';
+}
+function renderQuiz(){
+  renderKpi();var host=$("#quizHost");
+  var list=seq||QUESTOES.map(function(q){return q.id;});
+  var h="";
+  list.forEach(function(id,n){var q=qById(id);var r=S.quiz[id];var last=r&&r.last;
+    h+='<div class="qcard" id="qc-'+id+'"><div class="qmeta"><span class="pill">'+(n+1)+'/'+list.length+'</span><span class="pill">'+esc(TOPIC_LABEL[q.topic])+'</span><span class="pill d'+q.diff+'">'+DIFF[q.diff]+'</span></div><div class="qstem">'+q.stem+'</div>';
+    q.opts.forEach(function(o,j){var cls="opt";if(last){cls+=" disabled"+(j===q.ans?" correct":(j===last.sel?" wrong":""));}
+      h+='<label class="'+cls+'"><input type="radio" name="q'+id+'" value="'+j+'"'+(last?' disabled':'')+(last&&last.sel===j?' checked':'')+'><span class="lt">'+"ABCDE".charAt(j)+'</span><span>'+o+'</span></label>';});
+    if(!last){h+='<div class="conf" role="radiogroup" aria-label="Confiança">Confiança: '+['Baixa','Média','Alta'].map(function(c,k){return '<label><input type="radio" name="c'+id+'" value="'+k+'"'+(k===1?' checked':'')+'> '+c+'</label>';}).join(' ')+'</div><button class="btn sm" data-ans="'+id+'">Responder</button>';}
+    else{h+=feedback(q,last);}
+    h+='</div>';});
+  host.innerHTML=h;
+  $$("[data-ans]",host).forEach(function(b){b.onclick=function(){answer(b.getAttribute("data-ans"));};});
+  $$("[data-redo]",host).forEach(function(b){b.onclick=function(){var id=b.getAttribute("data-redo");if(S.quiz[id])S.quiz[id].last=null;save();renderQuiz();};});
+  $$("[data-cat]",host).forEach(function(s){s.onchange=function(){setErrCat(s.getAttribute("data-cat"),s.value);};});
+}
+function feedback(q,last){
+  var h='<div class="fb '+(last.ok?"ok":"no")+'"><strong>'+(last.ok?"Correto.":"Incorreto.")+'</strong> Resposta: '+"ABCDE".charAt(q.ans)+'. <span class="small muted">Confiança informada: '+['baixa','média','alta'][last.conf]+'.</span>';
+  h+='<h5>Por que cada alternativa</h5><ul>';
+  q.why.forEach(function(w,j){h+='<li><strong>'+"ABCDE".charAt(j)+(j===q.ans?" (correta)":"")+':</strong> '+w+'</li>';});
+  h+='</ul><h5>Para fixar</h5><p>'+q.tip+'</p>';
+  if(!last.ok){
+    var cur="";S.errors.forEach(function(e){if(e.qid===q.id)cur=e.cat;});
+    h+='<h5>Classifique seu erro</h5><select class="btn sm" data-cat="'+q.id+'" aria-label="Categoria do erro"><option value="">Escolher...</option>'+CATS.map(function(c){return '<option'+(c===cur?' selected':'')+'>'+c+'</option>';}).join('')+'</select>'+(last.conf===2?' <span class="small">Erro com confiança alta: considere “Excesso de confiança”.</span>':'');
+  }
+  h+=' <button class="btn sm" data-redo="'+q.id+'">Refazer</button></div>';
+  return h;
+}
+function answer(id){
+  var q=qById(id);var host=$("#qc-"+id);var r=$('input[name="q'+id+'"]:checked',host);
+  if(!r){toast("Escolha uma alternativa antes.");return;}
+  var conf=+($('input[name="c'+id+'"]:checked',host)||{value:1}).value;var sel=+r.value;var ok=sel===q.ans;
+  var rec=S.quiz[id]||{n:0,k:0};rec.n++;if(ok)rec.k++;rec.last={ok:ok,sel:sel,conf:conf,t:today()};S.quiz[id]=rec;
+  if(ok){S.errors=S.errors.filter(function(e){return e.qid!==id||false;}).concat(S.errors.filter(function(e){return false;}));}
+  else{var ex=S.errors.filter(function(e){return e.qid===id;})[0];if(ex){ex.t=today();ex.sel=sel;}else S.errors.push({qid:id,cat:conf===2?"Excesso de confiança":"",t:today(),sel:sel});}
+  save();
+  var y=window.scrollY;renderQuiz();window.scrollTo(0,y);
+  renderPanel();renderObjectives();updateGlobal();
+}
+function setErrCat(id,cat){S.errors.forEach(function(e){if(e.qid===id)e.cat=cat;});save();renderPanel();}
+
+/* ---------- flashcards ---------- */
+var fcQueue=[],fcFlipped=false;
+function fcBuild(){
+  var f=$("#fcFilter").value,td=today();
+  fcQueue=FLASHCARDS.filter(function(c){var r=S.cards[c.id];if(f==="all")return true;if(f==="new")return !r;return !r||r.due<=td;}).map(function(c){return c.id;});
+  fcFlipped=false;fcRender();
+}
+function fcRender(){
+  var host=$("#fcStage"),info=$("#fcInfo");var s=stats();
+  info.textContent="Devidos: "+s.due+" · Novos: "+s.nw+" · Vistos: "+s.seen+"/"+FLASHCARDS.length+" · Nesta sequência: "+fcQueue.length;
+  if(!fcQueue.length){host.innerHTML='<div class="callout"><strong>Fila vazia.</strong> Nada devido neste filtro. Volte amanhã ou escolha “Todos”.</div>';return;}
+  var c=FLASHCARDS.filter(function(x){return x.id===fcQueue[0];})[0];
+  host.innerHTML='<div class="fcard" id="fcCard" tabindex="0" role="button" aria-label="Virar cartão"><span class="side-label">'+(fcFlipped?"Verso":"Frente")+'</span><span class="fc-topic">'+esc(TOPIC_LABEL[c.topic])+'</span><div class="fc-text">'+(fcFlipped?c.b:c.f)+'</div></div>'+
+   (fcFlipped?'<div class="srsrow"><button class="btn b-again" data-r="0">Errei</button><button class="btn b-hard" data-r="1">Difícil</button><button class="btn b-good" data-r="2">Bom</button><button class="btn b-easy" data-r="3">Fácil</button></div>':'<div class="srsrow"><button class="btn" id="fcFlip">Mostrar resposta</button></div>');
+  function flip(){fcFlipped=true;fcRender();}
+  $("#fcCard").onclick=function(){if(!fcFlipped)flip();};
+  $("#fcCard").onkeydown=function(e){if((e.key===" "||e.key==="Enter")&&!fcFlipped){e.preventDefault();flip();}};
+  var fb=$("#fcFlip");if(fb)fb.onclick=flip;
+  $$("[data-r]",host).forEach(function(b){b.onclick=function(){fcRate(c.id,+b.getAttribute("data-r"));};});
+}
+function fcRate(id,r){
+  var rec=S.cards[id]||{step:0,due:today(),seen:0};rec.seen++;
+  if(r===0)rec.step=0;else if(r===1)rec.step=Math.max(1,rec.step);else if(r===2)rec.step=Math.min(6,rec.step+1);else rec.step=Math.min(6,rec.step+2);
+  rec.due=addDays(today(),SRS_STEPS[rec.step]);S.cards[id]=rec;save();
+  fcQueue.shift();if(r===0)fcQueue.push(id);
+  fcFlipped=false;fcRender();updateGlobal();renderPanel();
+}
+function initFc(){
+  $("#fcFilter").onchange=fcBuild;
+  $("#fcCsv").onclick=function(){var t="Frente;Verso\n";FLASHCARDS.forEach(function(c){t+=csvCell(c.f)+";"+csvCell(c.b)+"\n";});download("sm2_mama_flashcards_anki.csv","﻿"+t,"text/csv;charset=utf-8");toast("CSV exportado (colunas Frente/Verso).");};
+  fcBuild();
+}
+
+/* ---------- mapa mental ---------- */
+function mmNode(n,lvl){
+  var kids=n.c&&n.c.length;
+  var h='<li class="mm-l'+lvl+'"><div class="mmnode">'+(kids?'<button class="mmtoggle" aria-expanded="'+(lvl<1?"true":"false")+'" aria-label="Expandir ou recolher">'+(lvl<1?"−":"+")+'</button>':'<span style="width:20px"></span>')+'<span class="mmlabel"><b>'+n.l+'</b>'+(n.d?'<span class="mmdet">'+n.d+'</span>':'')+'</span></div>';
+  if(kids){h+='<ul'+(lvl<1?'':' hidden')+'>';n.c.forEach(function(c){h+=mmNode(c,lvl+1);});h+='</ul>';}
+  return h+'</li>';
+}
+function initMM(){
+  var host=$("#mmHost");host.innerHTML='<ul>'+mmNode(MINDMAP,0)+'</ul>';
+  function bind(){$$(".mmtoggle",host).forEach(function(b){b.onclick=function(){var ul=b.parentNode.nextElementSibling;var open=ul.hasAttribute("hidden");if(open)ul.removeAttribute("hidden");else ul.setAttribute("hidden","");b.textContent=open?"−":"+";b.setAttribute("aria-expanded",open?"true":"false");};});}
+  bind();
+  function all(open){$$("ul[hidden], .mm ul",host).forEach(function(ul){if(ul===host.firstChild)return;if(open)ul.removeAttribute("hidden");else ul.setAttribute("hidden","");});$$(".mmtoggle",host).forEach(function(b){b.textContent=open?"−":"+";b.setAttribute("aria-expanded",open?"true":"false");});}
+  $("#mmExpand").onclick=function(){all(true);};
+  $("#mmCollapse").onclick=function(){all(false);var root=host.querySelector("ul>li>ul");if(root)root.removeAttribute("hidden");var t=host.querySelector(".mmtoggle");if(t){t.textContent="−";}};
+  $("#mmSearch").oninput=function(){var q=this.value.trim().toLowerCase();$$(".mmnode",host).forEach(function(n){n.classList.remove("hit");if(q.length>1&&n.textContent.toLowerCase().indexOf(q)>-1){n.classList.add("hit");var p=n.parentNode.parentNode;while(p&&p!==host){if(p.tagName==="UL"&&p.hasAttribute("hidden")){p.removeAttribute("hidden");var tg=p.previousElementSibling&&p.previousElementSibling.querySelector(".mmtoggle");if(tg){tg.textContent="−";}}p=p.parentNode;}}});};
+}
+
+/* ---------- revisão e checklist ---------- */
+function renderReview(){
+  var inp=$("#studyDate");inp.value=S.studyDate;
+  var plan=[[0,"D0","Estudo completo + questões + flashcards novos"],[1,"D1","Flashcards devidos + refazer erros"],[3,"D3","Questões dos temas com erro + mapa mental"],[7,"D7","Simulado curto (10 questões) + casos"],[14,"D14","Questões mistas + revisão dos cartões difíceis"],[30,"D30","Simulado integrado de mama + algoritmos de memória"],[60,"D60","Revisão final espaçada: síntese + erros persistentes"]];
+  var h="";plan.forEach(function(p){h+='<tr><td><strong>'+p[1]+'</strong></td><td>'+br(addDays(S.studyDate,p[0]))+'</td><td>'+p[2]+'</td></tr>';});
+  $("#reviewCal").innerHTML=h;
+  inp.onchange=function(){if(/^\d{4}-\d{2}-\d{2}$/.test(inp.value)){S.studyDate=inp.value;save();renderReview();}};
+  var c="";CHK.forEach(function(t,i){c+='<label class="opt"><input type="checkbox" data-chk="'+i+'"'+(S.chk[i]?' checked':'')+'><span>'+esc(t)+'</span></label>';});
+  $("#chkHost").innerHTML=c;
+  $$("[data-chk]").forEach(function(b){b.onchange=function(){S.chk[b.getAttribute("data-chk")]=b.checked?1:0;save();};});
+}
+
+/* ---------- glossário ---------- */
+function renderGloss(){
+  var q=($("#glSearch").value||"").trim().toLowerCase();var h="<dl>";var n=0;
+  GLOSSARIO.slice().sort(function(a,b){return a[0].localeCompare(b[0],"pt");}).forEach(function(g){if(q&&(g[0]+" "+g[1]).toLowerCase().indexOf(q)<0)return;n++;h+='<dt><strong>'+esc(g[0])+'</strong></dt><dd style="margin:0 0 8px 0">'+esc(g[1])+'</dd>';});
+  h+="</dl>";if(!n)h='<p class="muted">Nenhum termo encontrado.</p>';$("#glHost").innerHTML=h;
+}
+
+/* ---------- painel e caderno de erros ---------- */
+function renderPanel(){
+  var s=stats();var acc=s.ans?Math.round(s.ok/s.ans*100):0;
+  var h='<div class="grid g4"><div class="kpi"><span>Módulos visitados</span><b>'+s.vis+'/21</b></div><div class="kpi"><span>Questões</span><b>'+s.ans+'/'+QUESTOES.length+'</b></div><div class="kpi"><span>Acerto</span><b>'+(s.ans?acc+"%":"—")+'</b></div><div class="kpi"><span>Cartões devidos</span><b>'+s.due+'</b></div></div><h3>Desempenho por tema</h3>';
+  for(var t in TOPIC_LABEL){var tot=0,k=0,ok=0;QUESTOES.forEach(function(q){if(q.topic===t){tot++;var r=S.quiz[q.id];if(r&&r.last){k++;if(r.last.ok)ok++;}}});
+    var p=k?Math.round(ok/k*100):0;var cls=!k?"":(p>=80?"high":p>=60?"mid":"low");
+    h+='<div style="margin-bottom:8px"><div class="small">'+esc(TOPIC_LABEL[t])+' · '+(k?ok+'/'+k+' ('+p+'%)':'sem respostas')+'</div><div class="bar"><i class="'+cls+'" style="width:'+(k?p:0)+'%"></i></div></div>';}
+  var weak=[];for(var t2 in TOPIC_LABEL){var kk=0,oo=0;QUESTOES.forEach(function(q){if(q.topic===t2){var r=S.quiz[q.id];if(r&&r.last){kk++;if(r.last.ok)oo++;}}});if(kk&&oo/kk<0.7)weak.push(TOPIC_LABEL[t2]);}
+  h+='<div class="callout '+(weak.length?'warn':'blue')+'"><h4>Próxima tarefa recomendada</h4><p style="margin-bottom:0">'+(weak.length?'Revise: '+esc(weak.join(", "))+'. Refaça os erros e os cartões devidos.':(s.ans<QUESTOES.length?'Continue as questões do módulo 13 e faça os flashcards devidos.':'Faça o D1 na data prevista (módulo 16) e refaça os erros.'))+'</p></div>';
+  $("#panel").innerHTML=h;
+  renderErrors();
+}
+function renderErrors(){
+  var host=$("#errHost");if(!S.errors.length){host.innerHTML='<p class="muted">Nenhum erro registrado ainda. Eles aparecem aqui quando você erra questões do módulo 13.</p>';return;}
+  var h='<div class="tblwrap"><table><thead><tr><th>Questão</th><th>Tema</th><th>Resposta correta</th><th>Categoria do erro</th><th>Data</th></tr></thead><tbody>';
+  S.errors.forEach(function(e){var q=qById(e.qid);if(!q)return;h+='<tr><td>'+plain(q.stem).slice(0,110)+'…</td><td>'+esc(TOPIC_LABEL[q.topic])+'</td><td>'+"ABCDE".charAt(q.ans)+') '+plain(q.opts[q.ans])+'</td><td>'+esc(e.cat||"não classificado")+'</td><td>'+br(e.t)+'</td></tr>';});
+  host.innerHTML=h+'</tbody></table></div>';
+}
+function initErr(){
+  $("#btnErrCsv").onclick=function(){var t="Questao;Tema;Resposta correta;Categoria;Data\n";S.errors.forEach(function(e){var q=qById(e.qid);if(q)t+=csvCell(q.stem)+";"+csvCell(TOPIC_LABEL[q.topic])+";"+csvCell(q.opts[q.ans])+";"+csvCell(e.cat||"")+";"+e.t+"\n";});download("sm2_mama_caderno_erros.csv","﻿"+t,"text/csv;charset=utf-8");};
+  $("#btnErrClear").onclick=function(){if(confirm("Limpar o caderno de erros?")){S.errors=[];save();renderPanel();renderQuiz();}};
+}
+
+/* ---------- início ---------- */
+function shuffleQ(){QUESTOES.forEach(function(q,i){var perm=[0,1,2,3,4];var seed=(i*7+3)%11+1;for(var k=4;k>0;k--){seed=(seed*37+11)%101;var j=seed%(k+1);var t=perm[k];perm[k]=perm[j];perm[j]=t;}
+  q.opts=perm.map(function(p){return q.opts[p];});q.why=perm.map(function(p){return q.why[p];});q.ans=perm.indexOf(q.ans);});}
+function init(){
+  shuffleQ();S=load();initLook();buildNav();initLayers();initSearch();
+  renderObjectives();renderDiag();renderCases();initQuizControls();renderQuiz();initFc();initMM();renderReview();
+  $("#glSearch").oninput=renderGloss;renderGloss();initErr();renderPanel();updateGlobal();
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})();
+
+
+</script>
+</body>
+</html>
