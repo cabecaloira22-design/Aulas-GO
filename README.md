@@ -10,6 +10,7 @@ Uma pasta por aula, cada uma com seu `index.html`. A página inicial lista todas
 - `aula-05-hipertensao-gestacao/` — Hipertensão na gestação
 - `aula-06-diabetes-gestacao/` — Diabetes na gestação
 - `aula-07-ciur/` — CIUR
+- `aula-08-colo-uterino/` — Neoplasia do colo uterino
 - `aula-09-corpo-uterino/` — Doenças do corpo uterino
 - `aula-10-doencas-mama/` — Doenças da mama
 - `aula-11-massas-anexiais/` — Massas anexiais ovarianas
