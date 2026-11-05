@@ -7,6 +7,7 @@ Uma pasta por aula, cada uma com seu `index.html`. A página inicial lista todas
 - `aula-01-amenorreia/` — Amenorreias
 - `aula-02-somp/` — SOMP
 - `aula-03-climaterio/` — Climatério
+- `aula-04-propedeutica-fetal/` — Propedêutica fetal
 - `aula-05-hipertensao-gestacao/` — Hipertensão na gestação
 - `aula-06-diabetes-gestacao/` — Diabetes na gestação
 - `aula-07-ciur/` — CIUR
